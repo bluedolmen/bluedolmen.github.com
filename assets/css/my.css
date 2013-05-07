@@ -1,0 +1,23 @@
+.affix-top {
+	height: 200px;
+}
+
+.masthead .btn-black {
+	color: black;
+}
+
+.jumbotron a:hover .btn-black {
+	color: grey;
+}
+
+.span9 .affix {
+	position: static;
+}
+
+.marketing .row p {
+	text-align: justify;
+}
+
+.marketing .row ul {
+	text-align: left;
+}
