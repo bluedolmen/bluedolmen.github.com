@@ -1,9 +1,11 @@
 
 <div class="jumbotron masthead" markdown="1">
 
+=begin
 # Coucou Blue Courrier
 
 Suivre les courriers efficacement
+=end
 
 </div>
 
