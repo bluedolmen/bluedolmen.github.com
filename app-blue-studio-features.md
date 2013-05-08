@@ -1,3 +1,9 @@
+---
+    title: Blue Studio Features, what is SIDE?
+---
+
+{% include macro-header.html %}
+
 =INTRODUCTION=
 
 SIDE is an Open Source environment to model vertical web application layers and to generate the artifacts of these layers on specific vertical web frameworks.
@@ -80,3 +86,4 @@ The MDA approach on which is based SIDE suggests to model functional layers usin
 
 BlueDolmen chooses to apply these techniques to the Alfresco ECM frameworks by providing meta-model based on requirements, content types, workflow, portal structure, form and view models. For each of these meta-model, SIDE provides inter-models transformation, generators and deployers for various versions of Alfresco and of specialized frameworks like jBPM for workflow, Chiba for form, Alfresco Share and Liferay for portal structures.
 
+{% include macro-footer.html %}
