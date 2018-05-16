@@ -1,0 +1,1155 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A Material Design theme for MkDocs">
+      
+      
+        <link rel="canonical" href="https://github.com/bluedolmen/fr/BP/MU-Parapheur/">
+      
+      
+        <meta name="author" content="Jean-Christophe Kermagoret">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
+    
+    
+      
+        <title>Manuel utilisateur de BlueParapheur - BlueDolmen Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.8d40d89b.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#presentation-generale" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://github.com/bluedolmen/" title="BlueDolmen Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                BlueDolmen Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Manuel utilisateur de BlueParapheur
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/bluedolmen/blue-courrier" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      bluedolmen/bluecourrier
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="Sommaire" class="md-tabs__link">
+        Sommaire
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../MU/" title="BlueCourrier" class="md-tabs__link">
+          BlueCourrier
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../BD/" title="BlueDélibérations" class="md-tabs__link">
+          BlueDélibérations
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../BA/MI/" title="BlueAppStore" class="md-tabs__link">
+          BlueAppStore
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../MG-Processus/" title="BlueProcessus" class="md-tabs__link md-tabs__link--active">
+          BlueProcessus
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    BlueDolmen Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/bluedolmen/blue-courrier" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      bluedolmen/bluecourrier
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Sommaire" class="md-nav__link">
+      Sommaire
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      BlueCourrier
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        BlueCourrier
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../MU/" title="Manuel utilisateur" class="md-nav__link">
+      Manuel utilisateur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../MA/" title="Manuel administrateur" class="md-nav__link">
+      Manuel administrateur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../MD/" title="Manuel développeur" class="md-nav__link">
+      Manuel développeur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../MI/" title="Manuel d'installation" class="md-nav__link">
+      Manuel d'installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DEX/" title="Manuel d'exploitation" class="md-nav__link">
+      Manuel d'exploitation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DAT/" title="Dossier d'architecture technique" class="md-nav__link">
+      Dossier d'architecture technique
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ELK/" title="Contrib / Manuel d'utilisation de Kibana" class="md-nav__link">
+      Contrib / Manuel d'utilisation de Kibana
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      BlueDélibérations
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        BlueDélibérations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../BD/" title="Manuel utilisateur" class="md-nav__link">
+      Manuel utilisateur
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      BlueAppStore
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        BlueAppStore
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../BA/MI/" title="Manuel d'installation" class="md-nav__link">
+      Manuel d'installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../BA/MU/" title="Manuel utilisateur" class="md-nav__link">
+      Manuel utilisateur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../BA/MD/" title="Manuel développeur" class="md-nav__link">
+      Manuel développeur
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      BlueProcessus
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        BlueProcessus
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MG-Processus/" title="Guide d'utilisation de BlueProcessus" class="md-nav__link">
+      Guide d'utilisation de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MU-Processus/" title="Manuel utilisateur de BlueProcessus" class="md-nav__link">
+      Manuel utilisateur de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Manuel utilisateur de BlueParapheur
+      </label>
+    
+    <a href="./" title="Manuel utilisateur de BlueParapheur" class="md-nav__link md-nav__link--active">
+      Manuel utilisateur de BlueParapheur
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pourquoi-alfresco" title="Pourquoi Alfresco ?" class="md-nav__link">
+    Pourquoi Alfresco ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure-du-guide" title="Structure du guide" class="md-nav__link">
+    Structure du guide
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MI-Processus/" title="Manuel d'installation de BlueProcessus" class="md-nav__link">
+      Manuel d'installation de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MA-Processus/" title="Manuel d'administration de BlueProcessus" class="md-nav__link">
+      Manuel d'administration de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MD-Processus/" title="Manuel de développement de BlueProcessus" class="md-nav__link">
+      Manuel de développement de BlueProcessus
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pourquoi-alfresco" title="Pourquoi Alfresco ?" class="md-nav__link">
+    Pourquoi Alfresco ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure-du-guide" title="Structure du guide" class="md-nav__link">
+    Structure du guide
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="presentation-generale">Présentation Générale<a class="headerlink" href="#presentation-generale" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p><strong>Blue Parapheur</strong> est un parapheur électronique open source déployable 
+sur l'environnement Alfresco de gestion électronique de document.</p>
+<p>Ce '<strong>Guide d'Utilisation de Blue Parapheur</strong>' 
+décrit la création et le déploiement de circuit de paraphe de documents 
+par des fonctionnels métier et l'exécution des ces circuits par des utilisateurs finaux.</p>
+<p><strong>Blue Parapheur</strong> s'appuie sur Alfresco 
+et sur l'extension Alfresco <strong>Blue Processus</strong> 
+qui permet la modélisation graphique de processus documentaires.</p>
+<p>Un circuit de paraphe est composé d'une succession d'étapes de paraphe d'un document (à l'image d'un signataire qui passe de service en service) : 
+une étape de paraphe est réalisée par une personne ou un groupe de personnes (par exermple, un directeur de service ou un comité scientifique) 
+et consiste à indiquer </p>
+<ul>
+<li>
+<p>son approbation (dans ce cas, le circuit passe à l'étape suivant s'il y en a une), </p>
+</li>
+<li>
+<p>sa désapprobation (dans ce cas, l'initiateur se voit proposer de corriger/compléter/améliorer/... le document).</p>
+</li>
+</ul>
+<p>L'approbation peut être accompagnée d'un signature électronique intégrée au document.</p>
+<p><img alt="Diagramme de processus de circuit de paraphe" src="../images/Blue_Parapheur/vue_graphique_processus_circuit_paraphe.png" /></p>
+<h2 id="pourquoi-alfresco">Pourquoi Alfresco ?<a class="headerlink" href="#pourquoi-alfresco" title="Permanent link">&para;</a></h2>
+<p>Alfreso est un environnement de gestion électronique de documents ("GED").
+Ce type d'environnement se compose de 5 outils principaux:</p>
+<ul>
+<li>un gestionnaire de documents pour les créer, éditer, supprimer, visualiser en collaboration concurrente,</li>
+<li>un moteur d'indexation de documents pour les retrouver,</li>
+<li>un moteur de tâches pour gérer les cycle de vie des documents,</li>
+<li>un portail d'accès aux documents,</li>
+<li>des interfaces ouvertes dont le standard CMIS (le "SQL" de la gestion documentaire). </li>
+</ul>
+<p>Un parapheur électronique doit permettre de transmettre un ou des documents à des responsables pour diffusion ou approbation. 
+Cette transmission doit être trâcée, ré-aiguillée si besoin, validée officiellement si besoin, déléguée ou assistée.</p>
+<p>Outre le fait qu'il s'agit de document et de cycle de vie de documents, toutes ses opérations bénéficie des services ouverts d'un environnement de GED comme Alfresco et
+peuvent s'appuyer efficacement sur ses 5 outils principaux sans avoir à ré-inventer la roue.</p>
+<h2 id="structure-du-guide">Structure du guide<a class="headerlink" href="#structure-du-guide" title="Permanent link">&para;</a></h2>
+<p>Ce guide d'utilisation de Blue Parapheur est divisé en 3 chapitres :</p>
+<ol>
+<li>
+<p>Le chapitre '<strong>Présentation Générale</strong>' 
+décrit les objectifs de Blue Parapheur et la structure de ce guide d'utilisation,</p>
+</li>
+<li>
+<p>Le chapitre '<strong>Mise en œuvre</strong>' 
+décrit le développement et la mise à disposition des circuites de paraphe par les gestionnaires de site,</p>
+</li>
+<li>
+<p>Le chapitre '<strong>Utilisation</strong>' 
+décrit l'utilisation des circuits de paraphe par les utilisateurs finaux,</p>
+</li>
+<li>
+<p>Le chapitre '<strong>Configuration</strong>' 
+décrit les configurations possibles des circuits de paraphe. </p>
+</li>
+</ol>
+<h1 id="mise-en-uvre">Mise en œuvre<a class="headerlink" href="#mise-en-uvre" title="Permanent link">&para;</a></h1>
+<h2 id="introduction-prerequis">Introduction &amp; Prérequis<a class="headerlink" href="#introduction-prerequis" title="Permanent link">&para;</a></h2>
+<p><strong>Blue Parapheur</strong> met à disposition des utilisateurs des circuits de paraphe.</p>
+<p>Pour définir ces circuits de paraphe, les gestionnaires de site ont simplement à créer une liste de données.</p>
+<p>A la suite de cette création, <strong>Blue Parapheur</strong> génère un processus de <strong>Blue Processus</strong> qui est mis à disposition des utilisateurs finaux.</p>
+<p>Le seul prérequis est donc que l'application '<strong>Blue Processus</strong>' ait été installée préalablement.</p>
+<h2 id="initialisation-dun-circuit-de-paraphe">Initialisation d'un circuit de paraphe<a class="headerlink" href="#initialisation-dun-circuit-de-paraphe" title="Permanent link">&para;</a></h2>
+<p>La création d'un circuit de paraphe s'appuie sur la création, par un gestionnaire de site,
+d'une liste de données '<strong>Circuit de validation</strong>' </p>
+<ul>
+<li>
+<p>dans un site Share si vous souhaitez que le circuit de paraphe ne soit applicable que pour les documents de ce site,</p>
+</li>
+<li>
+<p>dans le site 'Processus Documentaire Blue Processus' si vous souhaitez que le circuit de paraphe soit applicable
+à tous les documents des sites Share.</p>
+</li>
+</ul>
+<p>Les étapes de création sont:</p>
+<ul>
+<li>
+<p>Dans le site choisi, cliquer sur l'onglet '<strong>Listes de données</strong>'</p>
+</li>
+<li>
+<p>Cliquer sur le bouton '<strong>Nouvelle Liste</strong>'</p>
+</li>
+<li>
+<p>Dans le formulaire qui s'affiche, </p>
+<ul>
+<li>
+<p>sélectionner '<strong>Circuit de validation</strong>'</p>
+</li>
+<li>
+<p>entrer pour nom 'mon circuit de paraphe**'</p>
+</li>
+<li>
+<p>Cliquer sur '<strong>Enregistrer</strong>'</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Diagramme de processus de circuit de paraphe" src="../images/Blue_Parapheur/formulaire_de_creation_nouvelle_liste_circuit_de_validation.png" /></p>
+<ul>
+<li>
+<p>La liste de données est créée; cliquer sur '<strong>Nouvel élément</strong>'</p>
+</li>
+<li>
+<p>Dans le formulaire qui s'affiche, créer la première étape du circuit de paraphe. Par exemple, en entrant:</p>
+<ul>
+<li>
+<p><strong>Service</strong> : <strong>Service RH</strong></p>
+</li>
+<li>
+<p><strong>Titre d'étape</strong> : <strong>Validation Sociale</strong></p>
+</li>
+<li>
+<p><strong>Aide</strong> : Texte d'aide affiché aux personnes à qui cette étape de paraphe sera soumise. 
+Par exemple, vous pouvez indiquer :</p>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<div class="codehilite"><pre><span></span>  **Ce document vous est transmis pour approbation.  Il vous suffit de cliquer sur le bouton &#39;Approuver&#39; si vous pensez
+     que ce document est correct d&#39;un point de vue social.
+
+     Toutefois si ce document ne vous convient pas, indiquer dans le champ &#39;commentaire&#39; vos remarques et cliquer sur le
+      bouton &#39;Refuser&#39; pour transmettre en retour au rédacteur s&#39;il est nécessaire de lui apporter des modifications importantes
+      de fond.
+
+      Si vous pensez que ce document ne nécessite pas d&#39;approbation par exemple, utiliser le bouton &#39;Abandonner&#39; pour interrompre
+      le circuit de validation.
+
+       Si vous souhaitez un avis complémentaire, utilisez l&#39;onglet &#39;Demande d&#39;avis&#39;.**
+</pre></div>
+
+
+</blockquote>
+<div class="codehilite"><pre><span></span>* **Responsable** : Sélectionner le responsable RH
+
+* **Délégation** : décocher si vous n&#39;autorisez pas la délégation pour le responsable RH
+
+* **Signature électronique** : cocher si une signature électronique est requise pour ce paraphe
+
+* **Fichiers suggérés** : cocher si vous autorisez les intervenants à télécharger des documents de suggestion pour cette étape
+
+* cliquer sur &#39;**Enregistrer**&#39;
+</pre></div>
+
+
+<p><img alt="Diagramme de processus de circuit de paraphe" src="../images/Blue_Parapheur/formulaire_de_creation_etape_circuit_de_validation.png" /></p>
+<ul>
+<li>
+<p>La première étape du circuit de paraphe est créé; cliquer sur '<strong>Nouvel élément</strong>'</p>
+</li>
+<li>
+<p>Dans le formulaire qui s'affiche, créer la seconde étape du circuit de paraphe. Par exemple, en entrant:</p>
+<ul>
+<li>
+<p><strong>Service</strong> : <strong>Service Technique</strong></p>
+</li>
+<li>
+<p><strong>Titre d'étape</strong> : <strong>Validation Technique</strong></p>
+</li>
+<li>
+<p><strong>Responsable</strong> : Sélectionner le responsable du service</p>
+</li>
+<li>
+<p><strong>Etape précédente</strong> : Sélectionner l'élément 'Service RH' de la liste</p>
+</li>
+<li>
+<p><strong>Délégation</strong> : décocher si vous n'autorisez pas la délégation pour le responsable du service</p>
+</li>
+<li>
+<p><strong>Signature électronique</strong> : cocher si une signature électronique est requise pour ce paraphe</p>
+</li>
+<li>
+<p><strong>Fichiers suggérés</strong> : cocher si vous autorisez les intervenants à télécharger des documents de suggestion pour cette étape</p>
+</li>
+<li>
+<p>cliquer sur '<strong>Enregistrer</strong>' </p>
+</li>
+</ul>
+</li>
+<li>
+<p>Renouveller l'opération précédente pour les services suivants que vous voulez intégrer au circuit de paraphe</p>
+</li>
+<li>
+<p>Cliquer sur l'icône d'édition de la liste de données (icône crayon à droite du nom de la liste de données 'mon circuit de paraphe').</p>
+</li>
+<li>
+<p>Dans le formulaire d'activation qui s'affiche, enter :</p>
+<ul>
+<li>
+<p><strong>Titre</strong> : change le titre du circuit si vous le souhaitez</p>
+</li>
+<li>
+<p><strong>Description</strong> : change la description du circuit si vous le souhaitez</p>
+</li>
+<li>
+<p><strong>Garder les permissions</strong> : cocher la case si vous souhaitez que les permissions sur le document avant le lancement du circuit soient rétablies à la fin du circuit</p>
+</li>
+<li>
+<p><strong>Type autorisé</strong> : entrer un type de documents pour lequel ce circuit est disponible; par exemple, 'cm:content' pour limiter le circuit au fichier. Si vous n'entrer rien, le circuit ets pour tous types de document (fichier et répertoire).</p>
+</li>
+<li>
+<p>cliquer sur '<strong>Enregistrer</strong>' </p>
+</li>
+</ul>
+</li>
+<li>
+<p>Cliquer sur l'icône de génération du circuit de validation (icône lien vert <img alt="Génération de circuit de validation" src="../images/Blue_Parapheur/circuit-paraphe-on-16.png" /> à droite du nom de la liste de données 'mon circuit de paraphe').</p>
+</li>
+<li>
+<p>Le circuit est généré et la fenêtre qui s'affiche montre les enchainements entre les différentes étapes du circuit.</p>
+</li>
+</ul>
+<p>Votre circuit de paraphe est créée.</p>
+<blockquote>
+<p>Note : le circuit est créé comme un processus de Blue Processus. 
+Vous pouvez donc utiliser l'interface graphique de Blue Processus pour le paramétrer plus finement.
+Se Reporter à la documentation de Blue processus si vous souhaitez plus d'information sur la conception graphique de processus.</p>
+</blockquote>
+<h2 id="edition-dun-circuit-de-paraphe">Edition d'un circuit de paraphe<a class="headerlink" href="#edition-dun-circuit-de-paraphe" title="Permanent link">&para;</a></h2>
+<p>L'édition d'un circuit de paraphe se fait, par un gestionnaire de site,
+sur la liste de données '<strong>Circuit de paraphe</strong>' </p>
+<p>Les étapes d'édition sont:</p>
+<ul>
+<li>
+<p>Dans le site choisi, cliquer sur l'onglet '<strong>Listes de données</strong>'</p>
+</li>
+<li>
+<p>Cliquer sur le nom de la liste '<strong>Circuit de paraphe</strong>'</p>
+</li>
+<li>
+<p>La liste de données est affichée; </p>
+<ul>
+<li>
+<p>Cliquer sur '<strong>Nouvel élément</strong>' pour ajouter une étape au circuit,</p>
+</li>
+<li>
+<p>à la droite d'une étape, Cliquer sur l'icône d'édition <img alt="Edition d'une étape de circuit de validation" src="../images/Blue_Parapheur/edit-16.png" /> pour changer les propriétés d'une étape,</p>
+</li>
+<li>
+<p>à la droite d'une étape, Cliquer sur l'icône de duplication <img alt="Duplication d'une étape de circuit de validation" src="../images/Blue_Parapheur/duplicate-row-16.png" /> pour créer une nouvelle étape à partir de l'étape courante (permet de conserver des valeurs comme la description, les cases à cocher, ...),</p>
+</li>
+<li>
+<p>à la droite d'une étape, Cliquer sur l'icône de suppression <img alt="Suppression d'une étape de circuit de validation" src="../images/Blue_Parapheur/delete-row-16.png" /> pour supprimer une étape.</p>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Note : </p>
+<ul>
+<li>
+<p>Les circuits en cours sont directement impactés par les changements si ces changements interviennent sur des étapes qui n'ont pas encore été passées par ces circuits.
+Dans le cas d'ajout ou de suppression d'étape, l'ancien circuit est conservé mais déplacé dans un espace d'archive pour que les circuits en cours ne soient pas impactés par cet ajout ou cette suppression. 
+Les circuits de l'espace archive sont régulièrement supprimés dès qu'ils n'ont plus de circuits actifs.</p>
+</li>
+<li>
+<p>Pour chaque circuit passé, un document de suivi des approbations est généré ainsi qu'un document de suivi de toutes les actions. 
+Ces documents sont conservés avec les données d'historisation du circuit et peuvent-être fournis sur demande par les administrateurs de l'application.</p>
+</li>
+</ul>
+</blockquote>
+<h1 id="utilisation">Utilisation<a class="headerlink" href="#utilisation" title="Permanent link">&para;</a></h1>
+<h2 id="introduction_1">Introduction<a class="headerlink" href="#introduction_1" title="Permanent link">&para;</a></h2>
+<p>Cette partie décrit les étapes d'utilisation d'un circuit de paraphe par les utilisateurs finaux.</p>
+<p>Ainsi :</p>
+<ul>
+<li>
+<p>un rédacteur va pouvoir soumettre un fichier ou un dossier à validation,</p>
+</li>
+<li>
+<p>un chef de service/département/direction ou un président va pouvoir valider (<strong>parapher</strong>) le document avec éventuellement intégration de sa signature électronique.</p>
+</li>
+</ul>
+<h2 id="execution-dun-circuit-de-paraphe">Exécution d'un circuit de paraphe<a class="headerlink" href="#execution-dun-circuit-de-paraphe" title="Permanent link">&para;</a></h2>
+<p>Un circuit de paraphe activé est immédiatement disponible pour les documents du type si un 'type autorisé' a été défini sur le circuit ou pour tous les documents si aucun type n'a été défini.</p>
+<p>Considérons le circuit de paraphe suivant :</p>
+<p><strong>Service RH sans signature électronique -&gt; Service Technique avec signature électronique</strong></p>
+<p>Les étapes d'exécution d'un circuit de paraphe sont:</p>
+<ul>
+<li>
+<p>Dans le site choisi, cliquer sur l'onglet '<strong>Espace Documentaire</strong>'</p>
+</li>
+<li>
+<p>Sur un fichier à parapher '<strong>monFichier.docx</strong>', sélectionner l'action '<strong>Lancer en circuit de validation</strong>'</p>
+</li>
+</ul>
+<p><img alt="Lancement de circuit de paraphe" src="../images/Blue_Parapheur/affichage_page_list_action_lancer_circuit_validation.png" /></p>
+<p><strong><em>Note: si plusieurs circuits de paraphe ont été créés, un formulaire est proposé pour sélectionné pour sélectionner le circuit à lancer.</em></strong></p>
+<ul>
+<li>Le circuit de paraphe est lancé : le premier intervenant '<strong>Responsable RH</strong>' reçoit un email lui indiquant qu'il a un paraphe sur un document
+  Le contenu par défaut de cet email est de la forme (ce contenu est paramétrable - voir le guide utilisateur de Blue Processus) :</li>
+</ul>
+<blockquote>
+<p>Bonjour,</p>
+<p>Une tâche vous a été assignée sur le document <code>monFichier.docx</code> par prenom nom (email) sur l'application 'Blue Processus'.</p>
+<p>Merci de procéder au plus vite à sa bonne résolution.</p>
+<p>Vous pouvez y accéder grâce au lien suivant 'http://<serveur>:<port>/share/page/site/testparaphe/document-details?nodeRef=workspace://SpacesStore/ebf6d045-0a12-4f73-b0e8-7f7c1323646c'.</p>
+<p>Ce lien vous donne accès à la prévisualisation du document à traiter et à la commande 'Réaliser ma tâche documentaire'.
+Cordialement,</p>
+<p>Les administrateurs Blue Processus
+http://<serveur>:<port>/share&gt;
+</p>
+</blockquote>
+<ul>
+<li>
+<p>Se connecter sous le compte du '<strong>Responsable RH</strong>'</p>
+</li>
+<li>
+<p>Dans la dashlet '<strong>Processus documentaires</strong>', cliquer sur le document en paraphe</p>
+</li>
+</ul>
+<p><img alt="Dashlet Processus Documentaires" src="../images/Blue_Parapheur/dashlet_processus_documentaires.png" /></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../MU-Processus/" title="Manuel utilisateur de BlueProcessus" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Manuel utilisateur de BlueProcessus
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../MI-Processus/" title="Manuel d'installation de BlueProcessus" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Manuel d'installation de BlueProcessus
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 BlueDolmen
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="http://struct.cc" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/bluedolmen" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/bluedolmen" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/bluedolmen" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.b438e6c5.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"../../.."}})</script>
+      
+        <script src="../../../assets/javascripts/ginseng.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

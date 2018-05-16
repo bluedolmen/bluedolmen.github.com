@@ -1,0 +1,1584 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A Material Design theme for MkDocs">
+      
+      
+        <link rel="canonical" href="https://github.com/bluedolmen/fr/MD/">
+      
+      
+        <meta name="author" content="Jean-Christophe Kermagoret">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
+    
+    
+      
+        <title>Manuel développeur - BlueDolmen Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.8d40d89b.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#manuel-de-developpement-de-bluecourrier" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://github.com/bluedolmen/" title="BlueDolmen Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                BlueDolmen Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Manuel développeur
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/bluedolmen/blue-courrier" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      bluedolmen/bluecourrier
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Sommaire" class="md-tabs__link">
+        Sommaire
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../MU/" title="BlueCourrier" class="md-tabs__link md-tabs__link--active">
+          BlueCourrier
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../BD/" title="BlueDélibérations" class="md-tabs__link">
+          BlueDélibérations
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../BA/MI/" title="BlueAppStore" class="md-tabs__link">
+          BlueAppStore
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../BP/MG-Processus/" title="BlueProcessus" class="md-tabs__link">
+          BlueProcessus
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    BlueDolmen Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/bluedolmen/blue-courrier" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      bluedolmen/bluecourrier
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Sommaire" class="md-nav__link">
+      Sommaire
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      BlueCourrier
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        BlueCourrier
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MU/" title="Manuel utilisateur" class="md-nav__link">
+      Manuel utilisateur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MA/" title="Manuel administrateur" class="md-nav__link">
+      Manuel administrateur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Manuel développeur
+      </label>
+    
+    <a href="./" title="Manuel développeur" class="md-nav__link md-nav__link--active">
+      Manuel développeur
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contexte" title="Contexte" class="md-nav__link">
+    Contexte
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objectif" title="Objectif" class="md-nav__link">
+    Objectif
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ajout-dune-metadonnee" title="Ajout d'une métadonnée" class="md-nav__link">
+    Ajout d'une métadonnée
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creation-dun-modele-de-donnees" title="Création d'un modèle de données" class="md-nav__link">
+    Création d'un modèle de données
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adaptation-du-formulaire-existant" title="Adaptation du formulaire existant" class="md-nav__link">
+    Adaptation du formulaire existant
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creation-du-modele-de-formulaire" title="Création du modèle de formulaire" class="md-nav__link">
+    Création du modèle de formulaire
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formulaire-de-liste-de-donnees" title="Formulaire de liste de données" class="md-nav__link">
+    Formulaire de liste de données
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formulaire-de-courrier" title="Formulaire de courrier" class="md-nav__link">
+    Formulaire de courrier
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestion-des-accents" title="Gestion des accents" class="md-nav__link">
+    Gestion des accents
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remplacement-des-lettres-accentuees-par-les-entites-html-correspondantes" title="Remplacement des lettres accentuées par les entités html correspondantes" class="md-nav__link">
+    Remplacement des lettres accentuées par les entités html correspondantes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internationalisation-de-votre-formulaire" title="Internationalisation de votre formulaire" class="md-nav__link">
+    Internationalisation de votre formulaire
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modification-du-css-du-formulaire" title="Modification du css du formulaire" class="md-nav__link">
+    Modification du css du formulaire
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reduction-de-lespace-avant-le-formulaire" title="Réduction de l'espace avant le formulaire" class="md-nav__link">
+    Réduction de l'espace avant le formulaire
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploiement" title="Déploiement" class="md-nav__link">
+    Déploiement
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploiement-via-le-systeme-de-fichiers" title="Déploiement via le système de fichiers" class="md-nav__link">
+    Déploiement via le système de fichiers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploiement-via-blue-appstore" title="Déploiement via Blue AppStore" class="md-nav__link">
+    Déploiement via Blue AppStore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploiement-manuel" title="Déploiement manuel" class="md-nav__link">
+    Déploiement manuel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploiement-automatique" title="Déploiement automatique" class="md-nav__link">
+    Déploiement automatique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test" title="Test" class="md-nav__link">
+    Test
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialisation" title="Initialisation" class="md-nav__link">
+    Initialisation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annexes" title="Annexes" class="md-nav__link">
+    Annexes
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MI/" title="Manuel d'installation" class="md-nav__link">
+      Manuel d'installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DEX/" title="Manuel d'exploitation" class="md-nav__link">
+      Manuel d'exploitation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DAT/" title="Dossier d'architecture technique" class="md-nav__link">
+      Dossier d'architecture technique
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ELK/" title="Contrib / Manuel d'utilisation de Kibana" class="md-nav__link">
+      Contrib / Manuel d'utilisation de Kibana
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      BlueDélibérations
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        BlueDélibérations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BD/" title="Manuel utilisateur" class="md-nav__link">
+      Manuel utilisateur
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      BlueAppStore
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        BlueAppStore
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BA/MI/" title="Manuel d'installation" class="md-nav__link">
+      Manuel d'installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BA/MU/" title="Manuel utilisateur" class="md-nav__link">
+      Manuel utilisateur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BA/MD/" title="Manuel développeur" class="md-nav__link">
+      Manuel développeur
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      BlueProcessus
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        BlueProcessus
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BP/MG-Processus/" title="Guide d'utilisation de BlueProcessus" class="md-nav__link">
+      Guide d'utilisation de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BP/MU-Processus/" title="Manuel utilisateur de BlueProcessus" class="md-nav__link">
+      Manuel utilisateur de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BP/MU-Parapheur/" title="Manuel utilisateur de BlueParapheur" class="md-nav__link">
+      Manuel utilisateur de BlueParapheur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BP/MI-Processus/" title="Manuel d'installation de BlueProcessus" class="md-nav__link">
+      Manuel d'installation de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BP/MA-Processus/" title="Manuel d'administration de BlueProcessus" class="md-nav__link">
+      Manuel d'administration de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BP/MD-Processus/" title="Manuel de développement de BlueProcessus" class="md-nav__link">
+      Manuel de développement de BlueProcessus
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contexte" title="Contexte" class="md-nav__link">
+    Contexte
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objectif" title="Objectif" class="md-nav__link">
+    Objectif
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ajout-dune-metadonnee" title="Ajout d'une métadonnée" class="md-nav__link">
+    Ajout d'une métadonnée
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creation-dun-modele-de-donnees" title="Création d'un modèle de données" class="md-nav__link">
+    Création d'un modèle de données
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adaptation-du-formulaire-existant" title="Adaptation du formulaire existant" class="md-nav__link">
+    Adaptation du formulaire existant
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creation-du-modele-de-formulaire" title="Création du modèle de formulaire" class="md-nav__link">
+    Création du modèle de formulaire
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formulaire-de-liste-de-donnees" title="Formulaire de liste de données" class="md-nav__link">
+    Formulaire de liste de données
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formulaire-de-courrier" title="Formulaire de courrier" class="md-nav__link">
+    Formulaire de courrier
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestion-des-accents" title="Gestion des accents" class="md-nav__link">
+    Gestion des accents
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remplacement-des-lettres-accentuees-par-les-entites-html-correspondantes" title="Remplacement des lettres accentuées par les entités html correspondantes" class="md-nav__link">
+    Remplacement des lettres accentuées par les entités html correspondantes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internationalisation-de-votre-formulaire" title="Internationalisation de votre formulaire" class="md-nav__link">
+    Internationalisation de votre formulaire
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modification-du-css-du-formulaire" title="Modification du css du formulaire" class="md-nav__link">
+    Modification du css du formulaire
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reduction-de-lespace-avant-le-formulaire" title="Réduction de l'espace avant le formulaire" class="md-nav__link">
+    Réduction de l'espace avant le formulaire
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploiement" title="Déploiement" class="md-nav__link">
+    Déploiement
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploiement-via-le-systeme-de-fichiers" title="Déploiement via le système de fichiers" class="md-nav__link">
+    Déploiement via le système de fichiers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploiement-via-blue-appstore" title="Déploiement via Blue AppStore" class="md-nav__link">
+    Déploiement via Blue AppStore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploiement-manuel" title="Déploiement manuel" class="md-nav__link">
+    Déploiement manuel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploiement-automatique" title="Déploiement automatique" class="md-nav__link">
+    Déploiement automatique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test" title="Test" class="md-nav__link">
+    Test
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialisation" title="Initialisation" class="md-nav__link">
+    Initialisation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annexes" title="Annexes" class="md-nav__link">
+    Annexes
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="manuel-de-developpement-de-bluecourrier">Manuel de développement de BlueCourrier<a class="headerlink" href="#manuel-de-developpement-de-bluecourrier" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<h3 id="contexte">Contexte<a class="headerlink" href="#contexte" title="Permanent link">&para;</a></h3>
+<p>Ce document détaille l'ensemble des manipulations nécessaires pour la personnalisation de BlueCourrier</p>
+<h3 id="objectif">Objectif<a class="headerlink" href="#objectif" title="Permanent link">&para;</a></h3>
+<p>L'objectif de ce document est de présenter les opérations nécessaires à la mise en place des différents composants du projet à partir d'un environnement vierge. Ce document s'adresse aux équipes techniques des clients de BlueCourrier.</p>
+<h2 id="ajout-dune-metadonnee">Ajout d'une métadonnée<a class="headerlink" href="#ajout-dune-metadonnee" title="Permanent link">&para;</a></h2>
+<p>L'ajout d'une métadonnée implique les étapes suivantes :</p>
+<ul>
+<li>créer un modèle de données définissant les propriétés qu'on souhaite ajouter ;</li>
+<li>créer un modèle de formulaire venant se superposer au formulaire par défaut afin de présenter les nouvelles métadonnées.</li>
+</ul>
+<p>Attention, il n'existe pas actuellement de points d'extension permettant de modifier les colonnes apparaissant à l'affichage de la liste des tâches.</p>
+<h3 id="creation-dun-modele-de-donnees">Création d'un modèle de données<a class="headerlink" href="#creation-dun-modele-de-donnees" title="Permanent link">&para;</a></h3>
+<p>La création d'un modèle de données dans Alfresco sort du cadre de ce tutoriel. Pour plus d'informations, vous pouvez consulter la documentation Alfresco à ce sujet.</p>
+<p>Pour illustrer l'ajout de métadonnées, nous allons créer un modèle de données minimal, contenant :</p>
+<ul>
+<li>le type de courrier ;</li>
+<li>le numéro de recommandé ;</li>
+<li>la date de réponse souhaitée ;</li>
+</ul>
+<p>Pour être stockées dans Alfresco, il faut définir certaines informations techniques comme le nom de la métadonnée, son type, son indexation... Les métadonnées sont regroupées dans ce qu'Alfresco appelle un 'aspect'.  </p>
+<p>Le modèle de données dans notre cas est le suivant :</p>
+<div class="codehilite"><pre><span></span>    &lt;?xml version=&#39;1.0&#39; encoding=&#39;iso-8859-1&#39;?&gt;
+
+    &lt;model name=&quot;BlueCourrierCustom:model&quot; xmlns=&quot;http://www.alfresco.org/model/dictionary/1.0&quot; xmlns:xi=&quot;http://www.w3.org/2001/XInclude&quot;&gt;
+        &lt;description&gt;BlueCourrier personalization&lt;/description&gt;
+        &lt;author&gt;Generated by BlueDolmen&lt;/author&gt;
+        &lt;version&gt;1.0&lt;/version&gt;
+
+        &lt;imports&gt;
+            &lt;import uri=&quot;http://www.alfresco.org/model/dictionary/1.0&quot; prefix=&quot;d&quot; /&gt;
+            &lt;import uri=&quot;http://www.alfresco.org/model/content/1.0&quot; prefix=&quot;cm&quot; /&gt;
+            &lt;import uri=&quot;http://www.alfresco.org/model/datalist/1.0&quot; prefix=&quot;dl&quot; /&gt;
+        &lt;/imports&gt;
+
+        &lt;namespaces&gt;            
+            &lt;namespace uri=&quot;http://www.bluexml.com/model/content/BlueCourrierCustom/1.0&quot; prefix=&quot;BlueCourrierCustom&quot; /&gt;
+        &lt;/namespaces&gt;
+
+        &lt;data-types&gt;
+        &lt;/data-types&gt;
+
+        &lt;constraints&gt;
+        &lt;/constraints&gt;
+
+        &lt;types&gt;
+            &lt;type name=&quot;BlueCourrierCustom:MailTypes&quot;&gt;
+                &lt;title&gt;Mail Types&lt;/title&gt;
+                &lt;description&gt;Mail types values a mail can have&lt;/description&gt;
+                &lt;parent&gt;dl:dataListItem&lt;/parent&gt;                
+                &lt;archive&gt;false&lt;/archive&gt;
+                &lt;properties&gt;
+                    &lt;property name=&quot;BlueCourrierCustom:MailTypes_shortLabel&quot;&gt;
+                        &lt;type&gt;d:text&lt;/type&gt;
+                          &lt;index enabled=&quot;true&quot;&gt;
+                             &lt;atomic&gt;true&lt;/atomic&gt;
+                             &lt;stored&gt;false&lt;/stored&gt;
+                             &lt;tokenised&gt;true&lt;/tokenised&gt;
+                          &lt;/index&gt;
+                    &lt;/property&gt;
+                    &lt;property name=&quot;BlueCourrierCustom:MailTypes_longLabel&quot;&gt;
+                        &lt;type&gt;d:text&lt;/type&gt;
+                          &lt;index enabled=&quot;true&quot;&gt;
+                             &lt;atomic&gt;true&lt;/atomic&gt;
+                             &lt;stored&gt;false&lt;/stored&gt;
+                             &lt;tokenised&gt;true&lt;/tokenised&gt;
+                          &lt;/index&gt;
+                    &lt;/property&gt;
+                &lt;/properties&gt;
+            &lt;/type&gt;
+        &lt;/types&gt;
+
+        &lt;aspects&gt;
+            &lt;aspect name=&quot;BlueCourrierCustom:AspectPerso&quot;&gt;
+                &lt;archive&gt;false&lt;/archive&gt;
+                &lt;properties&gt;
+                    &lt;property name=&quot;BlueCourrierCustom:AspectPerso_type&quot;&gt;
+                        &lt;type&gt;d:text&lt;/type&gt;
+                          &lt;index enabled=&quot;true&quot;&gt;
+                             &lt;atomic&gt;true&lt;/atomic&gt;
+                             &lt;stored&gt;false&lt;/stored&gt;
+                             &lt;tokenised&gt;true&lt;/tokenised&gt;
+                          &lt;/index&gt;
+                    &lt;/property&gt;
+                    &lt;property name=&quot;BlueCourrierCustom:AspectPerso_specificId&quot;&gt;
+                        &lt;type&gt;d:text&lt;/type&gt;
+                          &lt;index enabled=&quot;true&quot;&gt;
+                             &lt;atomic&gt;true&lt;/atomic&gt;
+                             &lt;stored&gt;false&lt;/stored&gt;
+                             &lt;tokenised&gt;true&lt;/tokenised&gt;
+                          &lt;/index&gt;
+                    &lt;/property&gt;
+                    &lt;property name=&quot;BlueCourrierCustom:AspectPerso_responseDate&quot;&gt;
+                        &lt;type&gt;d:date&lt;/type&gt;
+                          &lt;index enabled=&quot;true&quot;&gt;
+                             &lt;atomic&gt;true&lt;/atomic&gt;
+                             &lt;stored&gt;false&lt;/stored&gt;
+                             &lt;tokenised&gt;true&lt;/tokenised&gt;
+                          &lt;/index&gt;
+                    &lt;/property&gt;
+                &lt;/properties&gt;
+            &lt;/aspect&gt;
+        &lt;/aspects&gt;
+
+    &lt;/model&gt;
+</pre></div>
+
+
+<h2 id="adaptation-du-formulaire-existant">Adaptation du formulaire existant<a class="headerlink" href="#adaptation-du-formulaire-existant" title="Permanent link">&para;</a></h2>
+<p>En parallèle, nous devons créer un modèle de formulaire pour afficher ces nouveaux champs.</p>
+<p>Il existe déjà un formulaire qui affiche les métadonnées disponibles</p>
+<h3 id="creation-du-modele-de-formulaire">Création du modèle de formulaire<a class="headerlink" href="#creation-du-modele-de-formulaire" title="Permanent link">&para;</a></h3>
+<h4 id="formulaire-de-liste-de-donnees">Formulaire de liste de données<a class="headerlink" href="#formulaire-de-liste-de-donnees" title="Permanent link">&para;</a></h4>
+<p>Le champ MailTypes défini dans le modèle de données est une liste de valeurs, aussi appelée nomenclature ou liste de données dans le vocabulaire Alfresco. Alfresco propose une interface d'administration pour gérer ces listes. Ce sont également des formulaires et il faut donc aussi définir un modèle de formulaire pour afficher le formulaire de création, de mise à jour et de lecture.</p>
+<p>Le formulaire de création est défini à l'aide de l'attribute evaluator="model-type" :</p>
+<div class="codehilite"><pre><span></span>    &lt;config evaluator=&quot;model-type&quot; condition=&quot;BlueCourrierCustom:MailTypes&quot;&gt;
+</pre></div>
+
+
+<p>Le formulaire de mise à jour est défini à l'aide de la balise evaluator="node-type" :</p>
+<div class="codehilite"><pre><span></span>    &lt;config evaluator=&quot;node-type&quot; condition=&quot;BlueCourrierCustom:MailTypes&quot;&gt;
+</pre></div>
+
+
+<p>Le modèle de formulaire est le suivant :</p>
+<div class="codehilite"><pre><span></span>    &lt;?xml version=&quot;1.0&quot; encoding=&quot;iso-8859-1&quot;?&gt;
+    &lt;alfresco-config&gt;
+        &lt;!-- CREATE Mode --&gt;
+        &lt;config evaluator=&quot;model-type&quot; condition=&quot;BlueCourrierCustom:MailTypes&quot;&gt;
+            &lt;forms&gt;
+                &lt;form&gt;
+
+                    &lt;field-visibility&gt;
+
+                        &lt;show id=&quot;cm:name&quot; force=&quot;true&quot; /&gt;
+                        &lt;show id=&quot;BlueCourrierCustom:MailTypes_shortLabel&quot; force=&quot;true&quot; /&gt;
+                        &lt;show id=&quot;BlueCourrierCustom:MailTypes_longLabel&quot; force=&quot;true&quot; /&gt;
+                    &lt;/field-visibility&gt;
+
+                    &lt;appearance&gt;
+
+                        &lt;set id=&quot;mailTypes.default&quot; label=&quot;Types de courrier&quot; /&gt;
+
+                        &lt;field id=&quot;cm:name&quot; set=&quot;mailTypes.default&quot; mandatory=&quot;true&quot; read-only=&quot;false&quot;&gt;
+                            &lt;control template=&quot;/org/alfresco/components/form/controls/textfield.ftl&quot;&gt;&lt;/control&gt;
+                        &lt;/field&gt;
+                        &lt;field id=&quot;BlueCourrierCustom:MailTypes_shortLabel&quot; set=&quot;mailTypes.default&quot; mandatory=&quot;true&quot; read-only=&quot;false&quot;&gt;
+                            &lt;control template=&quot;/org/alfresco/components/form/controls/textfield.ftl&quot;&gt;&lt;/control&gt;
+                        &lt;/field&gt;
+                        &lt;field id=&quot;BlueCourrierCustom:MailTypes_longLabel&quot; set=&quot;mailTypes.default&quot; mandatory=&quot;true&quot; read-only=&quot;false&quot;&gt;
+                            &lt;control template=&quot;/org/alfresco/components/form/controls/textfield.ftl&quot;&gt;&lt;/control&gt;
+                        &lt;/field&gt;
+                    &lt;/appearance&gt;
+                &lt;/form&gt;
+            &lt;/forms&gt;
+        &lt;/config&gt;
+
+        &lt;!-- EDIT Mode --&gt;
+        &lt;config evaluator=&quot;node-type&quot; condition=&quot;BlueCourrierCustom:MailTypes&quot;&gt;
+            &lt;forms&gt;
+                &lt;form&gt;
+
+                    &lt;field-visibility&gt;
+
+                        &lt;show id=&quot;cm:name&quot; force=&quot;true&quot; /&gt;
+                        &lt;show id=&quot;BlueCourrierCustom:MailTypes_shortLabel&quot; force=&quot;true&quot; /&gt;
+                        &lt;show id=&quot;BlueCourrierCustom:MailTypes_longLabel&quot; force=&quot;true&quot; /&gt;
+                    &lt;/field-visibility&gt;
+
+                    &lt;appearance&gt;
+
+                        &lt;set id=&quot;mailTypes.default&quot; label=&quot;Types de courrier&quot; /&gt;
+
+                        &lt;field id=&quot;cm:name&quot; set=&quot;mailTypes.default&quot; mandatory=&quot;true&quot; read-only=&quot;false&quot;&gt;
+                            &lt;control template=&quot;/org/alfresco/components/form/controls/textfield.ftl&quot;&gt;&lt;/control&gt;
+                        &lt;/field&gt;
+                        &lt;field id=&quot;BlueCourrierCustom:MailTypes_shortLabel&quot; set=&quot;mailTypes.default&quot; mandatory=&quot;true&quot; read-only=&quot;false&quot;&gt;
+                            &lt;control template=&quot;/org/alfresco/components/form/controls/textfield.ftl&quot;&gt;&lt;/control&gt;
+                        &lt;/field&gt;
+                        &lt;field id=&quot;BlueCourrierCustom:MailTypes_longLabel&quot; set=&quot;mailTypes.default&quot; mandatory=&quot;true&quot; read-only=&quot;false&quot;&gt;
+                            &lt;control template=&quot;/org/alfresco/components/form/controls/textfield.ftl&quot;&gt;&lt;/control&gt;
+                        &lt;/field&gt;
+                    &lt;/appearance&gt;
+                &lt;/form&gt;
+            &lt;/forms&gt;
+        &lt;/config&gt;
+    &lt;/alfresco-config&gt;
+</pre></div>
+
+
+<h4 id="formulaire-de-courrier">Formulaire de courrier<a class="headerlink" href="#formulaire-de-courrier" title="Permanent link">&para;</a></h4>
+<p>Le formulaire suivant va fusionner avec le formulaire par défaut. Si vous souhaitez cacher des champs, il faut ainsi utiliser la balise &lt;hide&gt; à la place de &lt;show&gt;.</p>
+<p>Dans l'exemple suivant, le champ object, qui affiche l'objet du mail est ainsi caché. Cette définition surcharge ainsi la définition par défaut qui est d'afficher ce champ.</p>
+<p>Il est également possible d'indiquer dans quelle partie du formulaire les champs doivent s'afficher. Le formulaire est structuré autour de regroupements de champs appelé 'set'. L'analyse du formulaire par défaut fourni en annexe nous apprend que les groupes suivants sont définis :</p>
+<ul>
+<li>mail.default<ul>
+<li>mail.default.Identification</li>
+<li>mail.default.Dates</li>
+<li>mail.default.Instruction</li>
+<li>mail.default.Classification</li>
+</ul>
+</li>
+<li>mail.Sender<ul>
+<li>mail.Sender.organization</li>
+<li>mail.Sender.instructor</li>
+<li>mail.Sender.signator</li>
+<li>mail.Sender.contactDetails</li>
+</ul>
+</li>
+<li>mail.Recipient<ul>
+<li>mail.Recipient.organization</li>
+<li>mail.Recipient.person</li>
+<li>mail.Recipient.contactDetails</li>
+</ul>
+</li>
+</ul>
+<p>Dans l'exemple ci-dessous, nous indiquons le groupement 'set' dans lequel nous voulons injecter les champs que nous avons définis.</p>
+<div class="codehilite"><pre><span></span>    &lt;?xml version=&quot;1.0&quot; encoding=&quot;iso-8859-1&quot;?&gt;
+    &lt;alfresco-config&gt;
+            &lt;config evaluator=&quot;node-type&quot; condition=&quot;cm:content&quot;&gt;
+                &lt;forms&gt;
+                    &lt;form id=&quot;mail&quot;&gt;
+                        &lt;edit-form template=&quot;/fdk/templates/tab-edit-form.ftl&quot; /&gt;
+                        &lt;view-form template=&quot;/fdk/templates/tab-edit-form.ftl&quot; /&gt;
+
+                        &lt;field-visibility&gt;
+                            &lt;!--
+                            &lt;hide id=&quot;bluecourrier:object&quot; force=&quot;true&quot; /&gt;
+                            --&gt;
+                            &lt;show id=&quot;BlueCourrierCustom:AspectPerso_type&quot;  force=&quot;true&quot; /&gt;
+                            &lt;show id=&quot;BlueCourrierCustom:AspectPerso_specificId&quot;  force=&quot;true&quot; /&gt;
+                            &lt;show id=&quot;BlueCourrierCustom:AspectPerso_responseDate&quot;  force=&quot;true&quot; /&gt;
+                        &lt;/field-visibility&gt;
+
+                        &lt;appearance&gt;
+                            &lt;field id=&quot;BlueCourrierCustom:AspectPerso_specificId&quot; set=&quot;mail.default.Identification&quot; label=&quot;Id sp&amp;#233;cifique&quot; mandatory=&quot;false&quot; read-only=&quot;false&quot;&gt;
+                                &lt;control template=&quot;/org/alfresco/components/form/controls/textfield.ftl&quot;&gt;
+                                &lt;/control&gt;
+                            &lt;/field&gt;
+                            &lt;field id=&quot;BlueCourrierCustom:AspectPerso_responseDate&quot; set=&quot;mail.default.Dates&quot; label=&quot;Date de r&amp;#233;ponse souhait&amp;#233;e&quot; mandatory=&quot;false&quot; read-only=&quot;false&quot;&gt;
+                                &lt;control template=&quot;/org/alfresco/components/form/controls/date.ftl&quot;&gt;
+                                &lt;/control&gt;
+                            &lt;/field&gt;
+                            &lt;field id=&quot;BlueCourrierCustom:AspectPerso_type&quot; set=&quot;mail.default.Classification&quot; label=&quot;Type de courrier&quot; mandatory=&quot;false&quot; read-only=&quot;false&quot;&gt;
+                                &lt;control template=&quot;/org/bluedolmen/components/form/controls/dynamic-dropdown.ftl&quot;&gt;
+                                    &lt;control-param name=&quot;datasourceUrl&quot;&gt;&lt;![CDATA[bluedolmen/forms/datalist/bluecourrier/BlueCourrierCustom:MailTypes/items?valueProperty=cm:name]]&gt;
+                                    &lt;/control-param&gt;
+                                &lt;/control&gt;                                  
+                            &lt;/field&gt;
+                        &lt;/appearance&gt;
+                    &lt;/form&gt;
+                &lt;/forms&gt;
+            &lt;/config&gt;
+
+    &lt;/alfresco-config&gt;
+</pre></div>
+
+
+<h3 id="gestion-des-accents">Gestion des accents<a class="headerlink" href="#gestion-des-accents" title="Permanent link">&para;</a></h3>
+<h4 id="remplacement-des-lettres-accentuees-par-les-entites-html-correspondantes">Remplacement des lettres accentuées par les entités html correspondantes<a class="headerlink" href="#remplacement-des-lettres-accentuees-par-les-entites-html-correspondantes" title="Permanent link">&para;</a></h4>
+<p>Si les libellés des champs contiennent des accents, ceux-ci doivent être traduits en entités ISO-8859-1 avec leur valeur hexadécimale. L'utilisation des entités html classiques (&amp;eacute;) ne fonctionne pas. Ainsi :</p>
+<ul>
+<li>é = &amp;#233;</li>
+<li>à = &amp;#224;</li>
+</ul>
+<p>Attention, le ';' fait partie du code à écrire, ce qui donne :</p>
+<ul>
+<li>Date de réponse souhaitée = Date de r&amp;#233;ponse souhait&amp;#233;e</li>
+</ul>
+<p>Je vous invite à consulter la page suivante pour déterminer avec quelles valeurs remplacer les lettres accentuées :</p>
+<ul>
+<li><a href="http://cs.stanford.edu/people/miles/iso8859.html">http://cs.stanford.edu/people/miles/iso8859.html</a></li>
+</ul>
+<p>Nous obtenons finalement le modèle suivant :</p>
+<h4 id="internationalisation-de-votre-formulaire">Internationalisation de votre formulaire<a class="headerlink" href="#internationalisation-de-votre-formulaire" title="Permanent link">&para;</a></h4>
+<p>Le mécanisme précédent ne rend pas votre extension i18n, c'est à dire utilisable en plusieurs langues. Pour cela, il est nécessaire d'utiliser l'attribut label-id sur les &lt;field&gt; à la place de l'attribut label. Les label-id sont alors des références à des chaines de traduction stockées dans un fichier message caractéristique de la langue de l'utilisateur. Les entités sont alors codées en UTF-8 :</p>
+<ul>
+<li>é = \u00E9</li>
+<li>à = \u00E0</li>
+</ul>
+<p>Je vous invite à consulter la page suivante pour déterminer avec quelles valeurs remplacer les lettres accentuées (prendre la valeur hexa et la précéder par \u00)</p>
+<ul>
+<li><a href="http://cs.stanford.edu/people/miles/iso8859.html">http://cs.stanford.edu/people/miles/iso8859.html</a></li>
+</ul>
+<p>Ainsi, si vous utilisez les définitions suivantes :</p>
+<ul>
+<li>label-id="BlueCourrierCustom.specificId" en lieu de place de "Id sp&amp;#233;cifique"</li>
+<li>label-id="BlueCourrierCustom.responseDate" en lieu de place de "Date de r&amp;#233;ponse souhait&amp;#233;e"</li>
+<li>label-id="BlueCourrierCustom.mailTypes" en lieu de place de "Type de courrier"</li>
+</ul>
+<p>il faudra définir un fichier avec le contenu suivant :</p>
+<ul>
+<li>
+<p>messages_fr.properties :</p>
+<p>BlueCourrierCustom.specificId=Id sp\u00E9cifique
+BlueCourrierCustom.responseDate=Date de r\u00E9ponse souhait\u00E9e
+BlueCourrierCustom.mailTypes=Type de courrier</p>
+</li>
+<li>
+<p>messages_en.properties :</p>
+<p>BlueCourrierCustom.specificId=Specific Id
+BlueCourrierCustom.responseDate=Expected Response Date
+BlueCourrierCustom.mailTypes=Mail Type</p>
+</li>
+</ul>
+<h3 id="modification-du-css-du-formulaire">Modification du css du formulaire<a class="headerlink" href="#modification-du-css-du-formulaire" title="Permanent link">&para;</a></h3>
+<p>La plupart des éléments peut être modifiée dans la définition du thème. Cependant, certains éléments ne sont pas paramétrés et il faut donc ajouter une règle css.</p>
+<p>Afin que les éléments soient pris en compte simplement, vous pouvez modifier le fichier presentation.css du thème choisi.  </p>
+<h4 id="reduction-de-lespace-avant-le-formulaire">Réduction de l'espace avant le formulaire<a class="headerlink" href="#reduction-de-lespace-avant-le-formulaire" title="Permanent link">&para;</a></h4>
+<p>Pour réduire cet espace, il faut réaliser les étapes suivantes :</p>
+<ul>
+<li>Depuis le répertoire où est installé Alfresco, éditer le fichier tomcat/webapps/share/themes/lightTheme/presentation.css</li>
+<li>Ajouter en début de fichier les 3 lignes suivantes :</li>
+</ul>
+<div class="codehilite"><pre><span></span>    body .sticky-wrapper #template_x002e_formPortlet_x002e_extjseditform {
+            margin-top: -50px;
+    }
+</pre></div>
+
+<ul>
+<li>Aller sur l'url http://${YOUR_SERVER}/share/service/index</li>
+<li>Cliquer sur le bouton "Clear Dependency Caches" situé en bas de page</li>
+<li>Aller sur un formulaire d'indexation des métadonnées dans BlueCourrier</li>
+<li>L'espace avant le formulaire a disparu</li>
+</ul>
+<p>Attention, cette modification ne survivra pas une mise à jour de BlueCourrier qui remplacerait la webapp share.</p>
+<p>Pour plus d'information, consulter ce <a href="https://github.com/Alfresco/Aikau/blob/master/tutorial/chapters/ClearingDependencyCaches.md">lien</a>.</p>
+<h2 id="deploiement">Déploiement<a class="headerlink" href="#deploiement" title="Permanent link">&para;</a></h2>
+<p>A l'issue des personnalisations que nous avons faites, nous avons les éléments suivants :</p>
+<ul>
+<li>BlueCourrierCustomModel.xml contient votre modèle de données ;</li>
+<li>BlueCourrierCustom-share-forms-config.xml contient la définition de chaque formulaire :<ul>
+<li>formulaire d'édition des métadonnées de BlueCourrier (il n'y a pas de formulaire de création car elle est assurée par le système);</li>
+<li>formulaire de création et d'édition des types de mail</li>
+</ul>
+</li>
+</ul>
+<p>Le déploiement peut être fait de différentes manières :</p>
+<ul>
+<li>via le système de fichiers</li>
+<li>via Blue AppStore</li>
+</ul>
+<h4 id="deploiement-via-le-systeme-de-fichiers">Déploiement via le système de fichiers<a class="headerlink" href="#deploiement-via-le-systeme-de-fichiers" title="Permanent link">&para;</a></h4>
+<p>Pour le modèle de données, il faut copier et renommer le fichier BlueCourrierCustomModel.xml dans tomcat/shared/classes/alfresco/extension/customModel.xml.</p>
+<p>Pour les formulaires, il faut ajouter les définitions des formulaires définis dans ce tutoriel dans le fichier tomcat/shared/classes/alfresco/web-extension/share-config-custom.xml déjà existant en insérant uniquement les balises &lt;config&gt; et leur contenu bien sûr.</p>
+<p>Vous devez maintenant arrêter puis redémarrer Alfresco.</p>
+<h4 id="deploiement-via-blue-appstore">Déploiement via Blue AppStore<a class="headerlink" href="#deploiement-via-blue-appstore" title="Permanent link">&para;</a></h4>
+<p>Le déploiement le plus simple se déroule à travers BlueDolmen AppStore qui utilise les mécanismes de déploiement dynamique d'Alfresco, et les étend, afin de permettre un déploiement simple et aisé.</p>
+<p>Pour utiliser Blue AppStore, il faut d'abord procéder à son installation.</p>
+<p>Lorsque ce module est installé, vous avez 2 nouveaux répertoires dans le dictionnaire de données à la racine de votre entrepôt :</p>
+<ul>
+<li>Modèles : les modèles de données déposés dans ce répertoire sont déployés automatiquement ;</li>
+<li>Extension de configuration Share : les modèles de formulaires déposés dans ce répertoire sont chargés automatiquement. Attention, les noms des modèles doivent absolument se terminer par share-forms-config.xml</li>
+</ul>
+<p>Dans l'exemple traité, une liste de données 'Type de courrier' permet de sélectionner le type du courrier. Cette liste doit être initialisée</p>
+<h4 id="deploiement-manuel">Déploiement manuel<a class="headerlink" href="#deploiement-manuel" title="Permanent link">&para;</a></h4>
+<p>Dans le cadre de l'exemple que nous avons réalisé, il faut ainsi créer les fichiers suivants :</p>
+<ul>
+<li>BlueCourrierCustomModel.xml à stocker dans Dictionnaire de données/Modèles ;</li>
+<li>BlueCourrierCustom-share-forms-config.xml à stocker dans Dictionnaire de données/Extensions de configuration Share.</li>
+</ul>
+<h4 id="deploiement-automatique">Déploiement automatique<a class="headerlink" href="#deploiement-automatique" title="Permanent link">&para;</a></h4>
+<p>Le déploiement automatique n'est possible que si les modules ont été déposés sur Blue AppStore.</p>
+<p>Si les modules sont disponibles via Blue AppStore :</p>
+<ul>
+<li>Connectez-vous sur <a href="http://localhost:8080/share/page/marketplace">http://localhost:8080/share/page/marketplace</a> ;</li>
+<li>Identifiez-vous avec vos login et mot de passe ;</li>
+<li>Installez les modules définissant vos personnalisations :<ul>
+<li>Installez BlueCourrierCustom Model</li>
+<li>Installez BlueCourrierCustom UI</li>
+</ul>
+</li>
+</ul>
+<h3 id="test">Test<a class="headerlink" href="#test" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Connectez-vous sur <a href="http://localhost:8080/share/page/yamma">http://localhost:8080/share/page/yamma</a> ;</li>
+<li>Double-cliquez sur une tâche dans BlueCourrier : les éléments personnalisés (Id spécifique, date de réponse souhaitée, type de courrier...) doivent appapraître.</li>
+</ul>
+<h3 id="initialisation">Initialisation<a class="headerlink" href="#initialisation" title="Permanent link">&para;</a></h3>
+<p>Afin d'initialiser la liste de données des types de courrier, il faut aller dans l'écran de gestion des listes de données du site Configuration de BlueCourrier, accessible soit depuis Alfresco Share, soit depuis le menu Listes de données de BlueCourrier.</p>
+<ul>
+<li>Cliquez sur Nouvelle liste</li>
+<li>Sélectionnez la liste de données 'MailTypes...'</li>
+<li>Saisissez le titre de cette liste, par exemple, 'Types de courrier de mail'</li>
+<li>Rajoutez les différents types de listes attendues</li>
+</ul>
+<h2 id="annexes">Annexes<a class="headerlink" href="#annexes" title="Permanent link">&para;</a></h2>
+<p>Les annexes suivantes sont disponibles :</p>
+<ul>
+<li><a href="https://github.com/bluedolmen/App-blue-courrier/blob/master/bluecourrier/bluecourrier-repo/src/main/config/model/bluecourrierModel.xml">bluecourrierModel.xml</a> modèle de données défini par défaut dans BlueCourrier</li>
+<li><a href="https://github.com/bluedolmen/App-blue-courrier/blob/master/bluecourrier/bluecourrier-share/src/main/resources/META-INF/share-config-custom.xml">share-config-custom.xml</a> : modèle de formulaire défini par défaut dans BlueCourrier </li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../MA/" title="Manuel administrateur" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Manuel administrateur
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../MI/" title="Manuel d'installation" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Manuel d'installation
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 BlueDolmen
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="http://struct.cc" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/bluedolmen" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/bluedolmen" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/bluedolmen" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b438e6c5.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"../.."}})</script>
+      
+        <script src="../../assets/javascripts/ginseng.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

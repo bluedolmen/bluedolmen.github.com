@@ -1,0 +1,1614 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A Material Design theme for MkDocs">
+      
+      
+        <link rel="canonical" href="https://github.com/bluedolmen/fr/ELK/">
+      
+      
+        <meta name="author" content="Jean-Christophe Kermagoret">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
+    
+    
+      
+        <title>Contrib / Manuel d'utilisation de Kibana - BlueDolmen Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.8d40d89b.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#bluestats-user-manual" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://github.com/bluedolmen/" title="BlueDolmen Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                BlueDolmen Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Contrib / Manuel d'utilisation de Kibana
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/bluedolmen/blue-courrier" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      bluedolmen/bluecourrier
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Sommaire" class="md-tabs__link">
+        Sommaire
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../MU/" title="BlueCourrier" class="md-tabs__link md-tabs__link--active">
+          BlueCourrier
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../BD/" title="BlueDélibérations" class="md-tabs__link">
+          BlueDélibérations
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../BA/MI/" title="BlueAppStore" class="md-tabs__link">
+          BlueAppStore
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../BP/MG-Processus/" title="BlueProcessus" class="md-tabs__link">
+          BlueProcessus
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    BlueDolmen Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/bluedolmen/blue-courrier" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      bluedolmen/bluecourrier
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Sommaire" class="md-nav__link">
+      Sommaire
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      BlueCourrier
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        BlueCourrier
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MU/" title="Manuel utilisateur" class="md-nav__link">
+      Manuel utilisateur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MA/" title="Manuel administrateur" class="md-nav__link">
+      Manuel administrateur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MD/" title="Manuel développeur" class="md-nav__link">
+      Manuel développeur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MI/" title="Manuel d'installation" class="md-nav__link">
+      Manuel d'installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DEX/" title="Manuel d'exploitation" class="md-nav__link">
+      Manuel d'exploitation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DAT/" title="Dossier d'architecture technique" class="md-nav__link">
+      Dossier d'architecture technique
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Contrib / Manuel d'utilisation de Kibana
+      </label>
+    
+    <a href="./" title="Contrib / Manuel d'utilisation de Kibana" class="md-nav__link md-nav__link--active">
+      Contrib / Manuel d'utilisation de Kibana
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gestion-des-droits" title="Gestion des droits" class="md-nav__link">
+    Gestion des droits
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acces-a-blue-stats" title="Accès à Blue Stats" class="md-nav__link">
+    Accès à Blue Stats
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apercu-de-kibana" title="Aperçu de Kibana" class="md-nav__link">
+    Aperçu de Kibana
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction_1" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menu-de-navigation" title="Menu de navigation" class="md-nav__link">
+    Menu de navigation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#liste-des-metadonnees-extraites" title="Liste des métadonnées extraites" class="md-nav__link">
+    Liste des métadonnées extraites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synthese-des-logs" title="Synthèse des logs" class="md-nav__link">
+    Synthèse des logs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explorer-les-donnees" title="Explorer les données" class="md-nav__link">
+    Explorer les données
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction_2" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creer-une-requete" title="Créer une requête" class="md-nav__link">
+    Créer une requête
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rechercher-en-texte-libre" title="Rechercher en texte libre" class="md-nav__link">
+    Rechercher en texte libre
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtrer-sur-la-valeur-dun-champs" title="Filtrer sur la valeur d'un champs" class="md-nav__link">
+    Filtrer sur la valeur d'un champs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rechercher-selon-le-langage-de-recherche-lucene" title="Rechercher selon le langage de recherche Lucene" class="md-nav__link">
+    Rechercher selon le langage de recherche Lucene
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voir-les-donnees-des-documents" title="Voir les données des documents" class="md-nav__link">
+    Voir les données des documents
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sauvegarde-dune-requete" title="Sauvegarde d'une requête" class="md-nav__link">
+    Sauvegarde d'une requête
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualiser-vos-donnees" title="Visualiser vos données" class="md-nav__link">
+    Visualiser vos données
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction_3" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menu-de-navigation_1" title="Menu de navigation" class="md-nav__link">
+    Menu de navigation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creer-une-visualisation" title="Créer une visualisation" class="md-nav__link">
+    Créer une visualisation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ajouter-une-zone-de-texte" title="Ajouter une zone de texte" class="md-nav__link">
+    Ajouter une zone de texte
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telecharger-les-donnees-au-format-csv" title="Télécharger les données au format csv" class="md-nav__link">
+    Télécharger les données au format csv
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acceder-a-ses-tableaux-de-bord" title="Accéder à ses tableaux de bord" class="md-nav__link">
+    Accéder à ses tableaux de bord
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction_4" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menu-de-navigation_2" title="Menu de navigation" class="md-nav__link">
+    Menu de navigation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ouvrir-un-tableau-de-bord" title="Ouvrir un tableau de bord" class="md-nav__link">
+    Ouvrir un tableau de bord
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creer-un-tableau-de-bord" title="Créer un tableau de bord" class="md-nav__link">
+    Créer un tableau de bord
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modifier-les-parametres-de-kibana" title="Modifier les paramètres de Kibana" class="md-nav__link">
+    Modifier les paramètres de Kibana
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction_5" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indices" title="Indices" class="md-nav__link">
+    Indices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced" title="Advanced" class="md-nav__link">
+    Advanced
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objects" title="Objects" class="md-nav__link">
+    Objects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#about" title="About" class="md-nav__link">
+    About
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      BlueDélibérations
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        BlueDélibérations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BD/" title="Manuel utilisateur" class="md-nav__link">
+      Manuel utilisateur
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      BlueAppStore
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        BlueAppStore
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BA/MI/" title="Manuel d'installation" class="md-nav__link">
+      Manuel d'installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BA/MU/" title="Manuel utilisateur" class="md-nav__link">
+      Manuel utilisateur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BA/MD/" title="Manuel développeur" class="md-nav__link">
+      Manuel développeur
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      BlueProcessus
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        BlueProcessus
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BP/MG-Processus/" title="Guide d'utilisation de BlueProcessus" class="md-nav__link">
+      Guide d'utilisation de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BP/MU-Processus/" title="Manuel utilisateur de BlueProcessus" class="md-nav__link">
+      Manuel utilisateur de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BP/MU-Parapheur/" title="Manuel utilisateur de BlueParapheur" class="md-nav__link">
+      Manuel utilisateur de BlueParapheur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BP/MI-Processus/" title="Manuel d'installation de BlueProcessus" class="md-nav__link">
+      Manuel d'installation de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BP/MA-Processus/" title="Manuel d'administration de BlueProcessus" class="md-nav__link">
+      Manuel d'administration de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BP/MD-Processus/" title="Manuel de développement de BlueProcessus" class="md-nav__link">
+      Manuel de développement de BlueProcessus
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gestion-des-droits" title="Gestion des droits" class="md-nav__link">
+    Gestion des droits
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acces-a-blue-stats" title="Accès à Blue Stats" class="md-nav__link">
+    Accès à Blue Stats
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apercu-de-kibana" title="Aperçu de Kibana" class="md-nav__link">
+    Aperçu de Kibana
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction_1" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menu-de-navigation" title="Menu de navigation" class="md-nav__link">
+    Menu de navigation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#liste-des-metadonnees-extraites" title="Liste des métadonnées extraites" class="md-nav__link">
+    Liste des métadonnées extraites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synthese-des-logs" title="Synthèse des logs" class="md-nav__link">
+    Synthèse des logs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explorer-les-donnees" title="Explorer les données" class="md-nav__link">
+    Explorer les données
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction_2" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creer-une-requete" title="Créer une requête" class="md-nav__link">
+    Créer une requête
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rechercher-en-texte-libre" title="Rechercher en texte libre" class="md-nav__link">
+    Rechercher en texte libre
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtrer-sur-la-valeur-dun-champs" title="Filtrer sur la valeur d'un champs" class="md-nav__link">
+    Filtrer sur la valeur d'un champs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rechercher-selon-le-langage-de-recherche-lucene" title="Rechercher selon le langage de recherche Lucene" class="md-nav__link">
+    Rechercher selon le langage de recherche Lucene
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voir-les-donnees-des-documents" title="Voir les données des documents" class="md-nav__link">
+    Voir les données des documents
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sauvegarde-dune-requete" title="Sauvegarde d'une requête" class="md-nav__link">
+    Sauvegarde d'une requête
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualiser-vos-donnees" title="Visualiser vos données" class="md-nav__link">
+    Visualiser vos données
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction_3" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menu-de-navigation_1" title="Menu de navigation" class="md-nav__link">
+    Menu de navigation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creer-une-visualisation" title="Créer une visualisation" class="md-nav__link">
+    Créer une visualisation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ajouter-une-zone-de-texte" title="Ajouter une zone de texte" class="md-nav__link">
+    Ajouter une zone de texte
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telecharger-les-donnees-au-format-csv" title="Télécharger les données au format csv" class="md-nav__link">
+    Télécharger les données au format csv
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acceder-a-ses-tableaux-de-bord" title="Accéder à ses tableaux de bord" class="md-nav__link">
+    Accéder à ses tableaux de bord
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction_4" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menu-de-navigation_2" title="Menu de navigation" class="md-nav__link">
+    Menu de navigation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ouvrir-un-tableau-de-bord" title="Ouvrir un tableau de bord" class="md-nav__link">
+    Ouvrir un tableau de bord
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creer-un-tableau-de-bord" title="Créer un tableau de bord" class="md-nav__link">
+    Créer un tableau de bord
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modifier-les-parametres-de-kibana" title="Modifier les paramètres de Kibana" class="md-nav__link">
+    Modifier les paramètres de Kibana
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction_5" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indices" title="Indices" class="md-nav__link">
+    Indices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced" title="Advanced" class="md-nav__link">
+    Advanced
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objects" title="Objects" class="md-nav__link">
+    Objects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#about" title="About" class="md-nav__link">
+    About
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="bluestats-user-manual">BlueStats User Manual<a class="headerlink" href="#bluestats-user-manual" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>L'outil de statistiques proposé est Blue Stat, module de la suite Blue Dolmen, dont fait également partie Blue Courrier. Il analyse les logs (traces) des courriers traités par Blue Courrier et les organise afin d'accompagner les administrateurs fonctionnels dans l'optimisation de la gestion des courriers.</p>
+<p>Blue Stat regroupe les éléments suivants :</p>
+<ul>
+<li>Elasticsearch : moteur de stockage et de recherche des logs,</li>
+<li>Logstash : programme permettant de collecter, d'analyser et de stocker les logs de Blue Courrier,</li>
+<li>Kibana : outil de visualisation et d'organisation des graphiques sous forme de tableau de bord,</li>
+<li>Proxy : serveur web permettant d'authentifier l'accès aux statistiques.</li>
+</ul>
+<h3 id="gestion-des-droits">Gestion des droits<a class="headerlink" href="#gestion-des-droits" title="Permanent link">&para;</a></h3>
+<p>Blue Stats se base sur la version Open Source d'ELK. Cette version regroupe les principales fonctionnalités de la solution, mais ne permet pas une gestion des droits. Les accès à Blue Stats sont limités par le Proxy.</p>
+<p>Seuls les administrateurs fonctionnels ont accès à Blue Stats depuis leur instance Blue Courrier. Un partage des accès est possible, mais dans ce cas toutes les fonctionnalités d'administration seront accessibles à l'utilisateur.</p>
+<h3 id="acces-a-blue-stats">Accès à Blue Stats<a class="headerlink" href="#acces-a-blue-stats" title="Permanent link">&para;</a></h3>
+<p>Deux moyens sont possibles pour accéder à Blue Stats :</p>
+<ul>
+<li>Depuis Blue Courrier, en cliquant sur le lien <em>Statistique</em> présent dans le menu utilisateur ;</li>
+</ul>
+<p><img alt="Menu utilisateur de Blue Courrier" src="../images/ELK/blue-courrier-acces-stat.png" /></p>
+<ul>
+<li>Depuis l'url suivante : http://{SERVEUR}/stats.</li>
+</ul>
+<h2 id="apercu-de-kibana">Aperçu de Kibana<a class="headerlink" href="#apercu-de-kibana" title="Permanent link">&para;</a></h2>
+<h3 id="introduction_1">Introduction<a class="headerlink" href="#introduction_1" title="Permanent link">&para;</a></h3>
+<p>Lorsque vous accédez à Blue Stats, Kibana vous permet d'accéder à la synthèse des derniers logs envoyés à la plate-forme.</p>
+<p><img alt="Ecran d'accueil de Kibana" src="../images/ELK/blue-stats-discover.png" /></p>
+<p>Cet écran se caractérise par les éléments suivants :</p>
+<ul>
+<li>A : Menu de navigation,</li>
+<li>B : Liste des métadonnées extraites,</li>
+<li>C : Synthèse des logs sur la plage de temps sélectionnée.</li>
+</ul>
+<h3 id="menu-de-navigation">Menu de navigation<a class="headerlink" href="#menu-de-navigation" title="Permanent link">&para;</a></h3>
+<p>Le menu de navigation permet :</p>
+<ul>
+<li>d'accéder aux écrans <em>Discover</em>, <em>Visualize</em>, <em>Dashboard</em> et <em>Settings</em> ;</li>
+<li>de sélectionner une période de temps sur lequel les recherches vont être effectuées ;</li>
+<li>de faire une recherche rapide ;</li>
+<li>de faire une recherche avancée ;</li>
+<li>d'enregistrer une recherche ;</li>
+<li>d'ouvrir une recherche enregistrée.</li>
+</ul>
+<h3 id="liste-des-metadonnees-extraites">Liste des métadonnées extraites<a class="headerlink" href="#liste-des-metadonnees-extraites" title="Permanent link">&para;</a></h3>
+<p>La liste des métadonnées extraites permet d'effectuer une recherche rapide dans les logs. La partie <strong><em>Synthèse des logs</em></strong> de Kibana se met alors automatiquement à jour.</p>
+<h3 id="synthese-des-logs">Synthèse des logs<a class="headerlink" href="#synthese-des-logs" title="Permanent link">&para;</a></h3>
+<p>La synthèse des logs affiche par ordre chronologique l'ensemble des logs envoyés par Blue Courrier à Blue Stats.
+Un graphique indique le flux entrant par jour depuis l'installation de la solution. </p>
+<h2 id="explorer-les-donnees">Explorer les données<a class="headerlink" href="#explorer-les-donnees" title="Permanent link">&para;</a></h2>
+<h3 id="introduction_2">Introduction<a class="headerlink" href="#introduction_2" title="Permanent link">&para;</a></h3>
+<p>L'écran "Discover" de Kibana permet aux utilisateurs d'explorer toutes les données présentes dans Elasticsearch. Il est possible via cet écran d'exécuter des requêtes sur les données ainsi que de filtrer les résultats retournés par les requêtes saisies.</p>
+<h3 id="creer-une-requete">Créer une requête<a class="headerlink" href="#creer-une-requete" title="Permanent link">&para;</a></h3>
+<p>L'écran discover propose un champ texte dans lequel il est possible de saisir une requête.
+Les requêtes peuvent prendre plusieurs formes : </p>
+<ul>
+<li>Une recherche texte libre ;</li>
+<li>Un filtre construit sur la valeur d'un ou plusieurs champs à l'aide de l'interface de Kibana ;</li>
+<li>Une recherche utilisant le langage de recherche Lucene.</li>
+</ul>
+<p>Lorsqu'une requête est soumise, l'histogramme ainsi que le tableau présentant les résultats sont mis à jour.</p>
+<h4 id="rechercher-en-texte-libre">Rechercher en texte libre<a class="headerlink" href="#rechercher-en-texte-libre" title="Permanent link">&para;</a></h4>
+<p>Pour rechercher un texte particulier, procéder comme suit :</p>
+<ul>
+<li>Saisissez le texte à rechercher dans le champs texte situé en haut de l'écran <em>Discover</em> ;</li>
+<li>Validez la requête à l'aide de la touche "Enter" de votre clavier ou de la loupe situé à l'extrémité de la zone de texte.</li>
+</ul>
+<p>L'histogramme et le tableau présentant les résultats de la recherche sont mis à jour.</p>
+<p><img alt="Résultat d'une recherche en texte libre" src="../images/ELK/elk-full-text-search.jpg" /></p>
+<h4 id="filtrer-sur-la-valeur-dun-champs">Filtrer sur la valeur d'un champs<a class="headerlink" href="#filtrer-sur-la-valeur-dun-champs" title="Permanent link">&para;</a></h4>
+<p>Si vous souhaitez effectuer une recherche sur une valeur d'un champ en particulier, Kibana propose une interface permettant de se passer des requêtes de type Lucene ou JSON.</p>
+<p>Pour cela, dans la colonne de gauche :</p>
+<ul>
+<li>Cliquez sur le nom du champ, une liste présentant les valeurs les plus fréquentes du champs apparaît.</li>
+<li>Cliquez sur une valeur pour filtrer les résultats sur la valeur souhaitée du champ.</li>
+</ul>
+<p>Par exemple, pour effectuer une recherche sur les éléments dans l'état <em>pending</em> :</p>
+<ul>
+<li>Cliquez sur le champs mail.bluecourrier:status</li>
+<li>Dans la liste des valeurs, cliquez sur <img alt="Ajout d'un champ pour filtrer les données présentent dans le flux" src="../images/ELK/kibana-recherche-plus.png" /> en face du texte <em>pending</em></li>
+</ul>
+<p>Et pour effectuer une recherche sur les éléments n'étant pas dans l'état <em>pending</em> :</p>
+<ul>
+<li>Cliquez sur le champs mail.bluecourrier:status</li>
+<li>Dans la liste des valeurs, cliquez sur <img alt="Ajout d'un champ pour filtrer les données présentent dans le flux" src="../images/ELK/kibana-recherche-moins.png" /> en face du texte <em>pending</em></li>
+</ul>
+<p>L'histogramme et le tableau présentant les résultats de la recherche est mis à jour.</p>
+<h4 id="rechercher-selon-le-langage-de-recherche-lucene">Rechercher selon le langage de recherche Lucene<a class="headerlink" href="#rechercher-selon-le-langage-de-recherche-lucene" title="Permanent link">&para;</a></h4>
+<p>Le langage de recherche Lucene est lié au système d'index Lucene, utilisé par de nombreux moteurs de recherche (Alfresco, SolR, Elasticsearch).</p>
+<p>La syntaxe de recherche Lucene s'appuie sur le modèle de données utilisé par Lucene et plus particulièrement sur la notion de champ (Field en anglais). Un champ est un élément d'un document indexé par les moteurs de recherche utilisant Lucene. Il est possible d'effectuer une recherche sur un champ à l'aide de la syntaxe suivante :
+nomduchamp: "valeur recherchée".</p>
+<p>Exemple de formalisation pour les recherches précédentes sur le status <em>pending</em> :</p>
+<ul>
+<li>Tous les courriers possédant le statut <em>pending</em> = mail.bluecourrier:status :"pending" ;</li>
+<li>Tous les documents ne possédant pas dans le status pending = NOT mail.bluecourrier:status :"pending".</li>
+</ul>
+<p>La syntaxe Lucene comprend un certain nombre d'opérateur :</p>
+<ul>
+<li>AND</li>
+<li>OR</li>
+<li>NOT
+...</li>
+</ul>
+<p>Pour plus d'informations sur le langage de recherche Lucene : <a href="https://lucene.apache.org/core/2_9_4/queryparsersyntax.html">https://lucene.apache.org/core/2_9_4/queryparsersyntax.html</a></p>
+<h3 id="voir-les-donnees-des-documents">Voir les données des documents<a class="headerlink" href="#voir-les-donnees-des-documents" title="Permanent link">&para;</a></h3>
+<p>Vous pouvez modifier les champs affichés dans le tableau présentant les résultats. Pour cela il faut sélectionner vos champs en cliquant sur <strong><em>add</em></strong>.</p>
+<p><img alt="Ajout d'un champ pour filtrer les données présentent dans le flux" src="../images/ELK/blue-stats-add_logs.png" /></p>
+<p>Vous pouvez aussi retirer de votre sélection un champ qui ne convient plus en cliquant sur <strong><em>remove</em></strong>.</p>
+<p><img alt="Suppression d'un champ des filtres" src="../images/ELK/blue-stats-remove_logs.png" /></p>
+<h3 id="sauvegarde-dune-requete">Sauvegarde d'une requête<a class="headerlink" href="#sauvegarde-dune-requete" title="Permanent link">&para;</a></h3>
+<p>Lorsque votre requête vous convient vous pouvez la renommer et l'enregistrer en cliquant sur <strong><em>save search</em></strong> <img alt="" src="../images/ELK/blue-stats-save_search.png" />.</p>
+<h2 id="visualiser-vos-donnees">Visualiser vos données<a class="headerlink" href="#visualiser-vos-donnees" title="Permanent link">&para;</a></h2>
+<h3 id="introduction_3">Introduction<a class="headerlink" href="#introduction_3" title="Permanent link">&para;</a></h3>
+<p>L'onglet <strong><em>Visualize</em></strong> permet de créer de nouveau graphique et d'accéder rapidement aux graphiques déjà enregistrés.</p>
+<p><img alt="Page Visualization" src="../images/ELK/blue-stats-visualization.png" /></p>
+<p>Huit widget sont disponibles pour créer des requêtes et les ajouter à un tableau de bord. Sur ces huit widgets, sept correspondent à des visualisations et le dernier permet de créer une zone de texte dans son tableau de bord.
+Les requêtes et les visualisations sont indépendantes, cela vous permet de créer plusieurs visualisations pour une même requête et vice-versa. Lors de la sélection d'une visualisation, vous avez le choix entre utiliser une requête déjà existante ou en créer une nouvelle.</p>
+<h3 id="menu-de-navigation_1">Menu de navigation<a class="headerlink" href="#menu-de-navigation_1" title="Permanent link">&para;</a></h3>
+<p>Le menu de navigation de la partie <strong><em>Visualize</em></strong> de Kibana diffère légèrement de celui de la page d'accueil. Vous avez la possibilité :</p>
+<ul>
+<li>d'ajouter un nouvelle élément, par exemple une visualisation ;</li>
+<li>d'enregistrer l'élément que vous venez de créer ;</li>
+<li>d'ouvrir un élément précédemment enregistré ;</li>
+</ul>
+<p>mais aussi,</p>
+<ul>
+<li>de partager l'élément ouvert ;</li>
+<li>de rafraîchir la page pour recevoir de nouvelles données.</li>
+</ul>
+<h3 id="creer-une-visualisation">Créer une visualisation<a class="headerlink" href="#creer-une-visualisation" title="Permanent link">&para;</a></h3>
+<p>Pour créer une visualisation :</p>
+<ol>
+<li>
+<p>Sélectionnez la visualisation souhaitée ;</p>
+</li>
+<li>
+<p>Choisissez une requête existante ou créez-en une ; </p>
+</li>
+</ol>
+<p><img alt="Ajout ou création d'une requête" src="../images/ELK/blue-stats-select_search-source.png" /></p>
+<ol>
+<li>Configurez la visualisation ;</li>
+</ol>
+<p><img alt="Visualisation de la requête" src="../images/ELK/blue-stats-oppen-visulisation.png" /></p>
+<p>L'écran de création ou de modification d'une visualisation se divise en trois zones :</p>
+<ul>
+<li>le bandeau supérieur, commun à toutes les pages de Kibana ;</li>
+<li>la colonne de gauche, permettant de sélectionner les flux et de les agréger ;</li>
+<li>
+<p>la zone de droite, permettant de visualiser la requête.</p>
+</li>
+<li>
+<p>Cliquez sur Enregistrer
+Un bandeau apparaît vous permettant de renommer votre visualisation pour mieux la retrouver.
+Votre visualisation est maintenant enregistrée et peut être ajoutée à un tableau de bord.</p>
+</li>
+</ul>
+<h3 id="ajouter-une-zone-de-texte">Ajouter une zone de texte<a class="headerlink" href="#ajouter-une-zone-de-texte" title="Permanent link">&para;</a></h3>
+<p>La visualisation <strong><em>Markdown widget</em></strong> permet d'ajouter du texte à une tableau de bord et ne se présente pas comme les autres widgets.
+La colone de gauche, habituellement réservée à la sélection des abscisses et des ordonnées, propose une zone de texte. La partie droite de l'écran conserve son rôle de prévisualisation.</p>
+<p><img alt="Création d'un commentaire en markdown" src="../images/ELK/blue-stats-markdown.png" /></p>
+<h3 id="telecharger-les-donnees-au-format-csv">Télécharger les données au format csv<a class="headerlink" href="#telecharger-les-donnees-au-format-csv" title="Permanent link">&para;</a></h3>
+<p>La visualisation <em>Data table</em> permet de créer un tableur et de l'ajouter à un tableau de bord. Ce tableur peut être téléchargé au format csv depuis les pages <em>Visualize</em> et <em>Dashboard</em> si le widget a été ajouté à un tableau de bord.</p>
+<h2 id="acceder-a-ses-tableaux-de-bord">Accéder à ses tableaux de bord<a class="headerlink" href="#acceder-a-ses-tableaux-de-bord" title="Permanent link">&para;</a></h2>
+<h3 id="introduction_4">Introduction<a class="headerlink" href="#introduction_4" title="Permanent link">&para;</a></h3>
+<p>L'onglet <strong><em>Dashboard</em></strong> permet d'accéder aux tableaux de bords enregistrés. 
+Un tableau de bord est un regroupement de visualisation précédemment enregistrées.</p>
+<h3 id="menu-de-navigation_2">Menu de navigation<a class="headerlink" href="#menu-de-navigation_2" title="Permanent link">&para;</a></h3>
+<p>Le menu de navigation de la partie <strong><em>Dashboard</em></strong> de Kibana possède les mêmes fonctionnalités que celui de la partie <strong><em>Visualization</em></strong>. Vous avez la possibilité ici :</p>
+<ul>
+<li>d'ajouter un nouvelle élément, ici un tableau de bord ;</li>
+<li>d'enregistrer l'élément que vous venez de créer ;</li>
+<li>d'ouvrir un élément précédemment enregistré ;</li>
+</ul>
+<p>mais aussi,</p>
+<ul>
+<li>de partager l'élément ouvert ;</li>
+<li>de rafraîchir la page pour recevoir de nouvelles données.</li>
+</ul>
+<h3 id="ouvrir-un-tableau-de-bord">Ouvrir un tableau de bord<a class="headerlink" href="#ouvrir-un-tableau-de-bord" title="Permanent link">&para;</a></h3>
+<p>Pour ouvrir un tableau de bord précis, procédez comme suit :</p>
+<ol>
+<li>Depuis la page <strong><em>Dashboard</em></strong>, cliquez sur l'icône <em>load saved dashboard</em> ;</li>
+<li>Sélectionnez le tableau de bord souhaité.</li>
+</ol>
+<p><img alt="Ouvrir un tableau de bord" src="../images/ELK/blue-stats-open_dashboard.png" /></p>
+<p>Le tableau de bord s'ouvre alors.</p>
+<h3 id="creer-un-tableau-de-bord">Créer un tableau de bord<a class="headerlink" href="#creer-un-tableau-de-bord" title="Permanent link">&para;</a></h3>
+<p>Pour créer un tableau de bord, procédez comme suit :</p>
+<ol>
+<li>Depuis la page <strong><em>Dashboard</em></strong>, cliquez sur l'icône <em>add visualization</em> au centre de la page et à droite du moteur de recherche,</li>
+<li>Sélectionnez la visualisation souhaitée,</li>
+<li>Ajoutez autant de visualisation, les positionner par glisser-déposer,</li>
+<li>Enregistrez votre tableau de bord en cliquant sur <em>save dashboard</em>.</li>
+</ol>
+<p><img alt="Créer un tableau de bord" src="../images/ELK/blue-stats-creat_dashboard.png" /></p>
+<p>Votre nouveau tableau de bord est accessible et peut être partagé.</p>
+<h2 id="modifier-les-parametres-de-kibana">Modifier les paramètres de Kibana<a class="headerlink" href="#modifier-les-parametres-de-kibana" title="Permanent link">&para;</a></h2>
+<h3 id="introduction_5">Introduction<a class="headerlink" href="#introduction_5" title="Permanent link">&para;</a></h3>
+<p>Cet écran est réservé à des utilisations techniques. Il permet de définir et configurer différentes propriétés techniques de Kibana. Il offre également un accès aux fonctions d'import et d'export proposées par Kibana.</p>
+<p>Il permet d'accéder aux écrans suivants :</p>
+<ul>
+<li>Indices ;</li>
+<li>Advanced ;</li>
+<li>Objects ;</li>
+<li>About.</li>
+</ul>
+<h3 id="indices">Indices<a class="headerlink" href="#indices" title="Permanent link">&para;</a></h3>
+<p>Cette page permet de définir et modifier les définitions d'index utilisées par Kibana.
+Lorsqu'aucun index n'est configuré Kibana affiche cette page et propose de créer un index à partir des données présentes.</p>
+<p>Une fois l'index en place, il est possible d'accéder au détail des différents champs présents dans l'index mis en place, mais également de modifier la configuration de chacun de ces champs.</p>
+<h3 id="advanced">Advanced<a class="headerlink" href="#advanced" title="Permanent link">&para;</a></h3>
+<p>L'onglet <em>Advanced</em> permet de modifier certaines configurations par défaut de Kibana. 
+Il est par exemple possible de spécifier :</p>
+<ul>
+<li>des options pour Lucene ;</li>
+<li>des options utilisé lors de l'export CSV ;</li>
+<li>des options d'affichages de Kibana.</li>
+</ul>
+<h3 id="objects">Objects<a class="headerlink" href="#objects" title="Permanent link">&para;</a></h3>
+<p>L'onglet <em>Objects</em> permet d'accéder aux éléments ayant été sauvegardé dans Kibana. On y retrouve l'ensemble des tableaux de bord, visualisations et requêtes ayant été sauvegardés lors de l'utilisation de Kibana.</p>
+<p>L'écran permet également d'accéder à chacun de ces éléments afin de les modifier et de les supprimer.</p>
+<p>Enfin l'onglet <em>Objects</em> propose des boutons permettant d'exporter et d'importer les configurations des éléments de Kibana (Tableau de bord, Visualisation ...).</p>
+<h3 id="about">About<a class="headerlink" href="#about" title="Permanent link">&para;</a></h3>
+<p>L'onglet <em>About</em> permet d'accéder à l'écran "A propos" de Kibana. 
+Cet écran présente la version de Kibana utilisé.</p>
+<p>Pour vider les données contenus dans ELK, il faut envoyé une requête HTTP de type « DELETE » à l’adresse suivante : http://vm-courrier-stats:9200/statistics/mail.</p>
+<p>Cette manipulation peut être effectuée à l’aide de l’outil curl disponible sur les système de type unix (curl -XDELETE http://vm-courrier-stats:9200/statistics/mail). Depuis un système windows, il existe des extensions comme Poster (pour Chrome) qui permettent ce genre de manipulation.</p>
+<p>Cette manipulation a pour conséquence de supprimer le type de donnée « mail » correspondants aux courriers stockés dans Blue Courrier.</p>
+<p>Les informations suivantes sont envoyées à Kibana par Blue Courrier</p>
+<ul>
+<li>La date de création : <em>cm:created</em>,</li>
+<li>La date d'arrivée : <em>bluecourrier:deliveryDate</em>,</li>
+<li>La date d'échéance : <em>bluecourrier:dueDate</em>,</li>
+<li>La date de début de traitement : <em>startProcessingDate</em>,</li>
+<li>La date de fin de traitement : <em>closeProcessingDate</em>,</li>
+<li>La nature du courrier (entrant ou sortant) : <em>type</em>,<ul>
+<li>les courriers entrants sont labélisés <em>incoming</em>,</li>
+<li>les courriers sortants sont labélisés <em>outgoing</em>,</li>
+</ul>
+</li>
+<li>L'instructeur : <em>instructor</em>,</li>
+<li>Le processus du courrier : <em>processKind</em>,<ul>
+<li>les PDR sont labellisés <em>ep</em>,</li>
+<li>les PSU sont labellisés <em>fu</em>,</li>
+<li>les PI sont labellisés <em>ro</em>,</li>
+</ul>
+</li>
+<li>L'emplacement du courrier dans le processus de traitement : <em>bluecourrier:status</em>,<ul>
+<li>en attente de traitement : <em>pending</em>,</li>
+<li>en cours de traitement : <em>processing</em>,</li>
+<li>distribution en attente de validation : <em>validating!delivery</em>,</li>
+<li>traité : <em>processed</em>,</li>
+<li>envoyé : <em>delivering</em>,</li>
+</ul>
+</li>
+<li>Le service stockant le courrier : <em>service</em>,</li>
+<li>Le nombre de pièce-jointe : <em>attachmentsNumber</em>,</li>
+<li>
+<p>La catégorie du courrier : <em>categories</em>,</p>
+</li>
+<li>
+<p>La référence Alfresco du courrier : <em>nodeRef</em>.</p>
+</li>
+</ul>
+<p>Kibana produit aussi ses propres indicateurs :</p>
+<ul>
+<li>La nature du document : <em>_type</em>,</li>
+<li>L'index de référence : <em>_index</em>,</li>
+<li>L'identifiant de Kibana : <em>_id</em>.</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../DAT/" title="Dossier d'architecture technique" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Dossier d'architecture technique
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../BD/" title="Manuel utilisateur" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Manuel utilisateur
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 BlueDolmen
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="http://struct.cc" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/bluedolmen" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/bluedolmen" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/bluedolmen" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b438e6c5.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"../.."}})</script>
+      
+        <script src="../../assets/javascripts/ginseng.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

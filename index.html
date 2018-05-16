@@ -1,203 +1,780 @@
----
-    title: Applicatifs open source pour collectivités
----
 
-{% include macro-header.html %}
 
-<header class="jumbotron masthead">
 
-<div class="container">
 
-<div id="myCarousel" class="carousel slide" data-interval="5000">
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="active item">
-	    <h1>BlueDolmen</h1>
-	    <p>Applicatifs open source pour collectivités.</p>
-    </div>
-    <div class="item">
-    	<!--
-	    <center>
-	    	<img src="http://www.bluedolmen.com/files/BlueCourrier-960x320.png"><br/>
-	  		<img src="http://www.bluedolmen.com/wp-content/themes/striking/cache/images6/449_BlueParapheur.png-960x320.png"><br/>
-    	</center>
-    	-->
-	    <h1>Open Source</h1>
-	    <p>Utilisez gratuitement et librement BlueDolmen.</p>
-    </div>
-    <div class="item">
-	    <h1>Applicatifs</h1>
-	    <p>Courrier, délibérations, parapheur, archivage.</p>
-    </div>
-    <div class="item">
-	    <h1>Alfresco</h1>
-	    <p>Un seul socle documentaire pour votre organisation.</p>
-    </div>
-    <div class="item">
-	    <h1>Mobilité</h1>
-	    <p>Tablettes et smartphones sur BlueDolmen : Juin 2013 !</p>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A Material Design theme for MkDocs">
+      
+      
+        <link rel="canonical" href="https://github.com/bluedolmen/">
+      
+      
+        <meta name="author" content="Jean-Christophe Kermagoret">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="./assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
+    
+    
+      
+        <title>BlueDolmen Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="./assets/stylesheets/application.8d40d89b.css">
+      
+        <link rel="stylesheet" href="./assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="./assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="./css/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#bluecourrier" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://github.com/bluedolmen/" title="BlueDolmen Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">î Œ</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                BlueDolmen Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Sommaire
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
     </div>
   </div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
-
-<p class="download-info">
-    <a href="demo-video.html" class="btn btn-primary btn-large">Démonstration vidéo</a>
-    <a href="download.html" class="btn btn-black">Télécharger BlueDolmen</a>
-</p>
-
-<div class="marketing">
-  <div class="bs-links">
-    <ul class="masthead-links">
-      <li><a href="http://www.bluedolmen.org/www/help.html#gettingstarted">Premiers pas</a></li>
-      <li><a href="http://forums.bluedolmen.org/bluedolmen/topics">Forums</a></li>
-      <li><a href="http://www.bluedolmen.org/www/help.html#usermanuals">Manuels utilisateurs</a></li>
-      <li><a href="http://www.bluedolmen.org/www/demo-videos.html">Vidéos</a></li>
-      <li><a href="http://www.bluedolmen.org/www/help-mailing-lists.html">Listes de diffusion</a></li>
-      <!--
-      <li><a href="https://github.com/bluedolmen/issues?state=open">Soumettre un bug</a></li>
-      <li><a href="https://github.com/bluedolmen/wiki">Feuille de route</a></li>
-      -->
-    </ul>
-
-  </div>
-</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
 
 
-</div>
+  
 
+
+  <a href="https://github.com/bluedolmen/blue-courrier" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      bluedolmen/bluecourrier
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
 </header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
 
-<div class="bs-docs-social">
-  <div class="container">
-    <ul class="bs-docs-social-buttons">
-      <li>
-        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=bluedolmen&repo=App-blue-courrier&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="112px" height="20px"></iframe>
-      </li>
-      <li>
-        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=bluedolmen&repo=App-blue-courrier&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
-      </li>
-      <li class="follow-btn">
-        <a href="https://twitter.com/bluedolmen" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @bluedolmen</a>
-      </li>
-      <li class="tweet-btn">
-        <a href="https://twitter.com/bluedolmen/share" class="twitter-share-button" data-url="http://github.com/bluedolmen/" data-count="horizontal" data-via="bluedolmen" data-related="mdo:Creator of BlueDolmen">Tweet</a>
-      </li>
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="." title="Sommaire" class="md-tabs__link md-tabs__link--active">
+        Sommaire
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="fr/MU/" title="BlueCourrier" class="md-tabs__link">
+          BlueCourrier
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="fr/BD/" title="BlueDÃ©libÃ©rations" class="md-tabs__link">
+          BlueDÃ©libÃ©rations
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="fr/BA/MI/" title="BlueAppStore" class="md-tabs__link">
+          BlueAppStore
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="fr/BP/MG-Processus/" title="BlueProcessus" class="md-tabs__link">
+          BlueProcessus
+        </a>
+      
+    </li>
+  
+
+      
     </ul>
   </div>
-</div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon">î Œ</i>
+      
+    </span>
+    BlueDolmen Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
 
-<div class="container">
 
-<div class="marketing">
-  <h1>3 raisons d'essayer BlueDolmen.</h1>
-  <p class="marketing-byline">Une nouvelle génération d'applicatifs documentaires.</p>
-  <div class="row">
-    <div class="span4">
-      <img class="small-bs-icon" src="assets/img/icon-css3.png">
-      <h3>Des applicatifs sur un socle documentaire unique</h3>
-      <p>BlueDolmen développe des applications faites pour interagir ensemble. Un seul socle documentaire est utilisé afin de faciliter la collaboration et limiter la maintenance.</p>
-    </div>
-    <div class="span4">
-      <img class="small-bs-icon" src="assets/img/icon-github.png">
-      <h3>Une bibliothèque de modèles prêts à l'emploi</h3>
-      <p>Des formulaires de gestion des demandes d'achat, d'absence, de recrutement, d'ordres de mission, ... sont disponibles.
-      </p>
-    </div>
-    <div class="span4">
-      <img class="small-bs-icon" src="assets/img/icon-html5.png">
-      <h3>Un projet Open Source pour faciliter les contributions</h3>
-      <p>BlueDolmen est un projet libre et gratuit, ouvert à tous. Utiliser les modèles fournis par défaut et offrez les vôtres à la communauté. BlueDolmen propose un studio de développement permettant de modifier, d'ajouter et faire évoluer les applicatifs selon vos besoins.</p>
-    </div>
-  </div><!--/row-->
+  
 
-  <hr class="soften">
 
-<div class="marketing">
-  <h1>Utile, Utilisable, Utilisé.</h1>
-  <p class="marketing-byline">Des logiciels conçus pour vous faciliter la vie. Vraiment.</p>
-  <div class="row">
-    <div class="span3">
-		<img class="small-bs-icon" src="assets/img/icon-html5.png">
-		<h3>Pragmatisme</h3>
-		<ul>
-		<li>Utile</li>
-		<li>Utilisable</li>
-		<li>Utilisé</li>
-		</ul>
+  <a href="https://github.com/bluedolmen/blue-courrier" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      bluedolmen/bluecourrier
     </div>
-    <div class="span3">
-		<img class="small-bs-icon" src="assets/img/icon-html5.png">
-		<h3>Simplicité</h3>
-		<ul>
-		<li>Une mise en oeuvre rapide</li>
-		<li>Une ergonomie étudiée</li>
-		<li>Un outil paramétrable</li>
-		<li>Une interface Web</li>
-		</ul>
+  </a>
+
     </div>
-    <div class="span3">
-		<img class="small-bs-icon" src="assets/img/icon-html5.png">
-		<h3>Interfaces</h3>
-		<ul>
-		<li>Ordinateur</li>
-		<li>Tablettes</li>
-		<li>Smartphones</li>
-		</ul>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="." title="Sommaire" class="md-nav__link md-nav__link--active">
+      Sommaire
+    </a>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      BlueCourrier
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        BlueCourrier
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="fr/MU/" title="Manuel utilisateur" class="md-nav__link">
+      Manuel utilisateur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="fr/MA/" title="Manuel administrateur" class="md-nav__link">
+      Manuel administrateur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="fr/MD/" title="Manuel dÃ©veloppeur" class="md-nav__link">
+      Manuel dÃ©veloppeur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="fr/MI/" title="Manuel d'installation" class="md-nav__link">
+      Manuel d'installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="fr/DEX/" title="Manuel d'exploitation" class="md-nav__link">
+      Manuel d'exploitation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="fr/DAT/" title="Dossier d'architecture technique" class="md-nav__link">
+      Dossier d'architecture technique
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="fr/ELK/" title="Contrib / Manuel d'utilisation de Kibana" class="md-nav__link">
+      Contrib / Manuel d'utilisation de Kibana
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      BlueDÃ©libÃ©rations
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        BlueDÃ©libÃ©rations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="fr/BD/" title="Manuel utilisateur" class="md-nav__link">
+      Manuel utilisateur
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      BlueAppStore
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        BlueAppStore
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="fr/BA/MI/" title="Manuel d'installation" class="md-nav__link">
+      Manuel d'installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="fr/BA/MU/" title="Manuel utilisateur" class="md-nav__link">
+      Manuel utilisateur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="fr/BA/MD/" title="Manuel dÃ©veloppeur" class="md-nav__link">
+      Manuel dÃ©veloppeur
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      BlueProcessus
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        BlueProcessus
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="fr/BP/MG-Processus/" title="Guide d'utilisation de BlueProcessus" class="md-nav__link">
+      Guide d'utilisation de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="fr/BP/MU-Processus/" title="Manuel utilisateur de BlueProcessus" class="md-nav__link">
+      Manuel utilisateur de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="fr/BP/MU-Parapheur/" title="Manuel utilisateur de BlueParapheur" class="md-nav__link">
+      Manuel utilisateur de BlueParapheur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="fr/BP/MI-Processus/" title="Manuel d'installation de BlueProcessus" class="md-nav__link">
+      Manuel d'installation de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="fr/BP/MA-Processus/" title="Manuel d'administration de BlueProcessus" class="md-nav__link">
+      Manuel d'administration de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="fr/BP/MD-Processus/" title="Manuel de dÃ©veloppement de BlueProcessus" class="md-nav__link">
+      Manuel de dÃ©veloppement de BlueProcessus
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <p>Les logiciels suivants composent la suite de produits BlueDolmen :</p>
+<h1 id="bluecourrier">BlueCourrier<a class="headerlink" href="#bluecourrier" title="Permanent link">&para;</a></h1>
+<ul>
+<li><a href="fr/MU/">Manuel utilisateur</a></li>
+<li><a href="fr/MA/">Manuel administrateur</a></li>
+<li><a href="fr/MD/">Manuel dÃ©veloppeur</a></li>
+<li><a href="fr/MI/">Manuel d'installation</a></li>
+<li><a href="fr/DEX/">Manuel d'exploitation</a></li>
+<li><a href="fr/DAT/">Dossier d'architecture technique</a></li>
+<li><a href="fr/ELK/">Contrib / Manuel d'utilisation de Kibana</a></li>
+</ul>
+<h1 id="bluedeliberations">BlueDÃ©libÃ©rations<a class="headerlink" href="#bluedeliberations" title="Permanent link">&para;</a></h1>
+<ul>
+<li><a href="fr/BD/">Manuel utilisateur</a></li>
+</ul>
+<h1 id="blueappstore">BlueAppStore<a class="headerlink" href="#blueappstore" title="Permanent link">&para;</a></h1>
+<ul>
+<li><a href="fr/BA/MI/">Manuel d'installation</a></li>
+<li><a href="fr/BA/MU/">Manuel utilisateur</a></li>
+<li><a href="fr/BA/MD/">Manuel dÃ©veloppeur</a></li>
+</ul>
+<h1 id="blueprocessus">BlueProcessus<a class="headerlink" href="#blueprocessus" title="Permanent link">&para;</a></h1>
+<ul>
+<li><a href="fr/BP/MG-Processus/">Guide d'utilisation de BlueProcessus</a></li>
+<li><a href="fr/BP/MU-Processus/">Manuel utilisateur de BlueProcessus</a></li>
+<li><a href="fr/BP/MU-Parapheur/">Manuel utilisateur de BlueParapheur</a></li>
+<li><a href="fr/BP/MI-Processus/">Manuel d'installation de BlueProcessus</a></li>
+<li><a href="fr/BP/MA-Processus/">Manuel d'administration de BlueProcessus</a></li>
+<li><a href="fr/BP/MD-Processus/">Manuel de dÃ©veloppement de BlueProcessus</a></li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+        
+          <a href="fr/MU/" title="Manuel utilisateur" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Manuel utilisateur
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
     </div>
-    <div class="span3">
-		<img class="small-bs-icon" src="assets/img/icon-html5.png">
-		<h3>Couverture</h3>
-		<ul>
-		<li>Verticale</li>
-		<li>Horizontale</li>
-		</ul>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 BlueDolmen
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="http://struct.cc" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/bluedolmen" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/bluedolmen" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/bluedolmen" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
     </div>
   </div>
-</div>
-
-<!--
-  <hr class="soften">
-
-<div class="marketing">
-  <h1>Essayer BlueDolmen en 1 minutes ou en 10 minutes.</h1>
-  <p class="marketing-byline">L'essayer, c'est l'adopter.</p>
-  <div class="row">
-    <div class="span3">
-      <img class="small-bs-icon" src="assets/img/icon-css3.png">
-      <h3>Site de démo</h3>
-      <p>Un site de démo est en ligne. Il suffit de cliquer ici. Les données sont remises à zéro toutes les nuits, à 00h00 GMT+1. N'hésitez pas à lire la <a href="help-documentation.html">documentation</a>, regarder les <a href="demo-videos.html">vidéos</a> et à poser vos questions sur les <a target="_blank" href="http://forums.bluedolmen.com/bluedolmen">forums</a>.</p>
+</footer>
+      
     </div>
-    <div class="span3">
-      <img class="small-bs-icon" src="assets/img/icon-css3.png">
-      <h3>1 - Téléchargez</h3>
-      <p>Nous avons construit une machine virtuelle pour vous permettre de tester sans difficultés BlueDolmen. Téléchargez et installez Virtual Box puis lancez la machine virtuelle. Vous pouvez tester tout de suite !</p>
-    </div>
-    <div class="span3">
-      <img class="small-bs-icon" src="assets/img/icon-github.png">
-      <h3>2 - Lancez</h3>
-      <p>Installez VirtualBox et chargez la machine virtuelle. Ca yest, tout est installé !</p>
-    </div>
-    <div class="span3">
-      <img class="small-bs-icon" src="assets/img/icon-html5.png">
-      <h3>3 - Testez !</h3>
-      <p>Connectez-vous sur http://localhost:8080/share/page/yamma et testez Blue Courrier !</p>
-    </div>
-  </div> --><!--/row-->
-
-<!--
-  <h1>Un socle documentaire unique basé sur Alfresco</h1>
-  <p class="marketing-byline">De nombreux logiciels proposant des connecteurs vers Alfresco pour stocker leurs documents, les applicatifs développés dans le cadre du projet BlueDolmen sont tous connectés sur Alfresco afin d'éviter la multiplication des silkos documentaires.</p>
-  <a href="assets/bootstrap.zip" class="btn btn-large">Télécharger BlueDolmen <small>(v1.0.0)</small></a>
-
-  <hr class="soften">
-
-  <h1>Démarrer en quelques minutes</h1>
-  <p class="marketing-byline">Une machine virtuelle prête à l'emploi</p>
-  <a href="" class="btn btn-large">Télécharger BlueDolmen <small>(v1.0.0)</small></a>
-  -->
- </div><!-- /.marketing -->
-
-{% include macro-footer.html %}
+    
+      <script src="./assets/javascripts/application.b438e6c5.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"."}})</script>
+      
+        <script src="./assets/javascripts/ginseng.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

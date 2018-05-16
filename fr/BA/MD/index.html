@@ -1,0 +1,1263 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A Material Design theme for MkDocs">
+      
+      
+        <link rel="canonical" href="https://github.com/bluedolmen/fr/BA/MD/">
+      
+      
+        <meta name="author" content="Jean-Christophe Kermagoret">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
+    
+    
+      
+        <title>Manuel développeur - BlueDolmen Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.8d40d89b.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#manuel-de-developpement-de-blueappstore" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://github.com/bluedolmen/" title="BlueDolmen Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                BlueDolmen Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Manuel développeur
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/bluedolmen/blue-courrier" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      bluedolmen/bluecourrier
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="Sommaire" class="md-tabs__link">
+        Sommaire
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../MU/" title="BlueCourrier" class="md-tabs__link">
+          BlueCourrier
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../BD/" title="BlueDélibérations" class="md-tabs__link">
+          BlueDélibérations
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../MI/" title="BlueAppStore" class="md-tabs__link md-tabs__link--active">
+          BlueAppStore
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../BP/MG-Processus/" title="BlueProcessus" class="md-tabs__link">
+          BlueProcessus
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    BlueDolmen Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/bluedolmen/blue-courrier" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      bluedolmen/bluecourrier
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Sommaire" class="md-nav__link">
+      Sommaire
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      BlueCourrier
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        BlueCourrier
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../MU/" title="Manuel utilisateur" class="md-nav__link">
+      Manuel utilisateur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../MA/" title="Manuel administrateur" class="md-nav__link">
+      Manuel administrateur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../MD/" title="Manuel développeur" class="md-nav__link">
+      Manuel développeur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../MI/" title="Manuel d'installation" class="md-nav__link">
+      Manuel d'installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DEX/" title="Manuel d'exploitation" class="md-nav__link">
+      Manuel d'exploitation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DAT/" title="Dossier d'architecture technique" class="md-nav__link">
+      Dossier d'architecture technique
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ELK/" title="Contrib / Manuel d'utilisation de Kibana" class="md-nav__link">
+      Contrib / Manuel d'utilisation de Kibana
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      BlueDélibérations
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        BlueDélibérations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../BD/" title="Manuel utilisateur" class="md-nav__link">
+      Manuel utilisateur
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      BlueAppStore
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        BlueAppStore
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MI/" title="Manuel d'installation" class="md-nav__link">
+      Manuel d'installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MU/" title="Manuel utilisateur" class="md-nav__link">
+      Manuel utilisateur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Manuel développeur
+      </label>
+    
+    <a href="./" title="Manuel développeur" class="md-nav__link md-nav__link--active">
+      Manuel développeur
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elements" title="Eléments" class="md-nav__link">
+    Eléments
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#elements-de-configuration" title="Eléments de configuration" class="md-nav__link">
+    Eléments de configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenu" title="Contenu" class="md-nav__link">
+    Contenu
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strategie-de-packaging" title="Stratégie de packaging" class="md-nav__link">
+    Stratégie de packaging
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#packaging" title="Packaging" class="md-nav__link">
+    Packaging
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#script-ant" title="Script ant" class="md-nav__link">
+    Script ant
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequis" title="Prérequis" class="md-nav__link">
+    Prérequis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-des-projets-ant-pour-blueappstore" title="Structure des projets Ant pour BlueAppStore" class="md-nav__link">
+    Structure des projets Ant pour BlueAppStore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generation-du-module" title="Génération du module" class="md-nav__link">
+    Génération du module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publication-sur-blueappstore" title="Publication sur BlueAppStore" class="md-nav__link">
+    Publication sur BlueAppStore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generation-et-publication-simultanees" title="Génération et publication simultanées" class="md-nav__link">
+    Génération et publication simultanées
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interface-web-blueappstore" title="Interface web BlueAppStore" class="md-nav__link">
+    Interface web BlueAppStore
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" title="Exemple" class="md-nav__link">
+    Exemple
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      BlueProcessus
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        BlueProcessus
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../BP/MG-Processus/" title="Guide d'utilisation de BlueProcessus" class="md-nav__link">
+      Guide d'utilisation de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../BP/MU-Processus/" title="Manuel utilisateur de BlueProcessus" class="md-nav__link">
+      Manuel utilisateur de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../BP/MU-Parapheur/" title="Manuel utilisateur de BlueParapheur" class="md-nav__link">
+      Manuel utilisateur de BlueParapheur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../BP/MI-Processus/" title="Manuel d'installation de BlueProcessus" class="md-nav__link">
+      Manuel d'installation de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../BP/MA-Processus/" title="Manuel d'administration de BlueProcessus" class="md-nav__link">
+      Manuel d'administration de BlueProcessus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../BP/MD-Processus/" title="Manuel de développement de BlueProcessus" class="md-nav__link">
+      Manuel de développement de BlueProcessus
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elements" title="Eléments" class="md-nav__link">
+    Eléments
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#elements-de-configuration" title="Eléments de configuration" class="md-nav__link">
+    Eléments de configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenu" title="Contenu" class="md-nav__link">
+    Contenu
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strategie-de-packaging" title="Stratégie de packaging" class="md-nav__link">
+    Stratégie de packaging
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#packaging" title="Packaging" class="md-nav__link">
+    Packaging
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#script-ant" title="Script ant" class="md-nav__link">
+    Script ant
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequis" title="Prérequis" class="md-nav__link">
+    Prérequis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-des-projets-ant-pour-blueappstore" title="Structure des projets Ant pour BlueAppStore" class="md-nav__link">
+    Structure des projets Ant pour BlueAppStore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generation-du-module" title="Génération du module" class="md-nav__link">
+    Génération du module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publication-sur-blueappstore" title="Publication sur BlueAppStore" class="md-nav__link">
+    Publication sur BlueAppStore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generation-et-publication-simultanees" title="Génération et publication simultanées" class="md-nav__link">
+    Génération et publication simultanées
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interface-web-blueappstore" title="Interface web BlueAppStore" class="md-nav__link">
+    Interface web BlueAppStore
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" title="Exemple" class="md-nav__link">
+    Exemple
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="manuel-de-developpement-de-blueappstore">Manuel de développement de BlueAppStore<a class="headerlink" href="#manuel-de-developpement-de-blueappstore" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>BlueAppStore est un catalogue de modules prêts à l'emploi permettant l'installation en 1 clic de composants par un administrateur fonctionnel.</p>
+<p>Ce document détaille l'ensemble des manipulations nécessaires pour déployer un module sur BlueAppStore. Il prend pour exemple le modèle de données et les modèles de formulaires générés dans le tutoriel sur la personnalisation faite pour BlueCourrier.</p>
+<h2 id="elements">Eléments<a class="headerlink" href="#elements" title="Permanent link">&para;</a></h2>
+<p>Il est possible d'utiliser un module pour publier n'importe quel contenu dans le repository, aussi bien des éléments de configuration que des documents, des arborescences :</p>
+<h3 id="elements-de-configuration">Eléments de configuration<a class="headerlink" href="#elements-de-configuration" title="Permanent link">&para;</a></h3>
+<p>Les éléments de configuration peuvent être :</p>
+<ul>
+<li>modèle de données</li>
+<li>formulaire</li>
+<li>définitions de processus</li>
+<li>règles de contenu</li>
+<li>code javascript </li>
+</ul>
+<h3 id="contenu">Contenu<a class="headerlink" href="#contenu" title="Permanent link">&para;</a></h3>
+<p>Le contenu peut être :</p>
+<ul>
+<li>un fichier de n'importe quel type (texte, pdf, vidéo...)</li>
+<li>un modèle de fichier Office, LibreOffice ou OpenOffice</li>
+<li>une arborescence</li>
+<li>un modèle d'arboresce</li>
+<li>des éléments de configuration d'un module que vous avez écrit</li>
+</ul>
+<h2 id="strategie-de-packaging">Stratégie de packaging<a class="headerlink" href="#strategie-de-packaging" title="Permanent link">&para;</a></h2>
+<p>D'expérience, certains modules évoluent plus souvent que d'autres. Par exemple, un modèle de données est généralement assez stable, ainsi qu'un processus alors qu'un modèle de formulaire évolue souvent pour refléter des évolutions esthétiques et ergonomiques. En outre, certains modules sont plus sensibles que d'autres : les modèles de données évoluent ainsi principalement par ajout, les mécanismes d'intégrité empêchant la modification du modèle de données si cela a un impact sur les données stockées.</p>
+<p>Ainsi, nous créerons :</p>
+<ul>
+<li>un module pour le modèle de données</li>
+<li>un module pour les formulaires</li>
+</ul>
+<p>Dans le cas où nous aurions des processus, nous aurions également créé :
+* un module pour chaque processus</p>
+<p>Il est également possible de créer des modules avec n'importe quel contenu et pas seulement des éléments de configuration. On peut ainsi </p>
+<h2 id="packaging">Packaging<a class="headerlink" href="#packaging" title="Permanent link">&para;</a></h2>
+<p>Un module pour BlueAppStore est un fichier JAR respectant la structure suivante :</p>
+<ul>
+<li>racine du module<ul>
+<li>META-INF<ul>
+<li>MANIFEST.MF</li>
+<li>file-mappings.properties : fichier décrivant à quelle répertoire de destination les répertoires locaux correspondent</li>
+<li>module.yml : fichier décrivant le module</li>
+<li>logo.png : logo du module. Idéalement, sa taille est de 128x128</li>
+</ul>
+</li>
+<li>space-templates : répertoire local</li>
+<li>init-doclib : répertoire local</li>
+<li>scripts : répertoire local</li>
+</ul>
+</li>
+</ul>
+<p>Le contenu de file-mappings.properties est le suivant :</p>
+<div class="codehilite"><pre><span></span>    space-templates=/app:dictionary/app:space_templates
+    init-doclib=/st:sites/cm:app-subvention/cm:documentLibrary
+    scripts=/app:dictionary/app:scripts
+</pre></div>
+
+
+<p>Ces informations indiquent que les fichiers contenus dans les répertoires locaux space-templates, init-doclib et script, situés au même niveau que META-INF, seront copiés respectivement dans les répertoire /app:dictionary/app:space_templates, /st:sites/cm:app-subvention/cm:documentLibrary et /app:dictionary/app:scripts de l'entrepôt Alfresco de destination. Notez que le répertoire init-doclib implique que le site app-subvention doit exister sinon les fichiers contenus dans ce répertoire ne pourront être copiés et l'installation du module échouera.</p>
+<h3 id="script-ant">Script ant<a class="headerlink" href="#script-ant" title="Permanent link">&para;</a></h3>
+<p>Deux scripts ant sont disponibles pour vous aider à packager et publier vos modules sur BlueAppStore :</p>
+<ul>
+<li>META-INF/build.xml : ce script, stocké dans le répertoire META-INF de votre module, est chargé de construire votre module</li>
+<li>./build-commond.xml : ce script, stocké à la racine de vos projets, contient les fonctions de bas niveau pour gérer les numéros de version, le packaging et la publication de votre module sur BlueAppStore.</li>
+</ul>
+<h4 id="prerequis">Prérequis<a class="headerlink" href="#prerequis" title="Permanent link">&para;</a></h4>
+<p>Il faut installer Ant. Pour cela, téléchargez et installez la dernière version sur votre poste sans oublier de mettre à jour la variable d'environnement PATH de votre système :</p>
+<ul>
+<li><a href="http://apache.websitebeheerjd.nl//ant/binaries/apache-ant-1.9.6-bin.zip">apache-ant-1.9.6</a></li>
+</ul>
+<p>Vous devez ainsi pouvoir exécuter la commande suivante sans erreur :</p>
+<div class="codehilite"><pre><span></span>    ant -version
+</pre></div>
+
+
+<p>Le système doit vous répondre quelque chose comme ci-dessous : </p>
+<div class="codehilite"><pre><span></span>    Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+</pre></div>
+
+
+<h4 id="structure-des-projets-ant-pour-blueappstore">Structure des projets Ant pour BlueAppStore<a class="headerlink" href="#structure-des-projets-ant-pour-blueappstore" title="Permanent link">&para;</a></h4>
+<p>Afin de faciliter la génération des modules, les scripts Ant fournis ajoutent quelques fichiers supplémentaires :</p>
+<ul>
+<li>racine du module BlueAppStore<ul>
+<li>META-INF<ul>
+<li>build.number : numéro de version du module, généré automatiquement par le système</li>
+<li>build.properties : propriétés du module (nom, groupId, moduleId)</li>
+<li>module.yml.tpl : fichier décrivant le module (description, tags...). Ce fichier sert de modèle pour générer le fichier module.yml qui sera finalement packagé</li>
+</ul>
+</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<p>Se trouve également dans le répertoire META-INF le fichier build.xml décrit ci-dessus.</p>
+<p>Vous avez finalement l'aborescence suivante :</p>
+<ul>
+<li>BlueAppStore addons :<ul>
+<li>src/addons/com/bluedolmen/training/mymodule :<ul>
+<li>META-INF : <ul>
+<li>MANIFEST.MF</li>
+<li>build.number</li>
+<li>build.properties</li>
+<li>file-mappings.properties</li>
+<li>logo.png</li>
+<li>module.yml</li>
+<li>module.yml.tpl</li>
+</ul>
+</li>
+<li>models</li>
+<li>forms</li>
+<li>rules</li>
+<li>scripts</li>
+</ul>
+</li>
+<li>build-common.xml</li>
+</ul>
+</li>
+</ul>
+<p>avec :</p>
+<ul>
+<li>
+<p>file-mappings :</p>
+<div class="codehilite"><pre><span></span>forms=/app:dictionary/app:share_configs
+models=/app:dictionary/app:model
+space-templates=/app:dictionary/app:space_templates
+scripts=/app:dictionary/app:scripts
+init-doclib=/st:sites/cm:app-subvention/cm:documentLibrary
+</pre></div>
+
+
+</li>
+<li>
+<p>build.properties :</p>
+<div class="codehilite"><pre><span></span>#addon.name=Subvention - Business Code
+addon.name=&lt;Nom de votre module&gt;
+
+#addon.groupId=fr.franche-comte.domain.investment.subvention
+addon.groupId=&lt;Nom technique de votre module en dns inversé&gt;
+
+#addon.moduleId=bizcode
+addon.moduleId=&lt;Nom du module dans le groupId&gt;
+</pre></div>
+
+
+</li>
+<li>
+<p>modul.yml.tpl :</p>
+<div class="codehilite"><pre><span></span>name         : @addon.name@
+groupId      : @addon.groupId@
+moduleId     : @addon.moduleId@
+
+version      : 1.2
+packaging    : alfrescomodel
+
+description  : &gt;
+  Ce module décrit les données liées à la gestion des fiches
+  marchés publics dans les collectivités. Les données sont stockées dans
+  un répertoire dont le path est calculé à partir de règles de nommage.
+  D&#39;autres règles de nommage permettent également de déterminer le nom du
+  document à partir de valeurs des méta-données.
+
+license      : license.md
+
+author       :
+  username   : @addon.username@
+  contact    : @addon.email@
+
+cost         : EUR 0
+
+category     : /Collectivites/Marches Publics/Data
+
+tags         :
+  - tag1
+  - tag2
+  - tag3
+</pre></div>
+
+
+</li>
+</ul>
+<p>Les seuls éléments que vous pouvez modifier dans ce fichier sont :</p>
+<ul>
+<li>description</li>
+<li>tags</li>
+</ul>
+<h4 id="generation-du-module">Génération du module<a class="headerlink" href="#generation-du-module" title="Permanent link">&para;</a></h4>
+<p>Pour construire le module, il suffit de lancer la target 'package' dans le répertoire META-INF du module. Dans notre exemple de module :</p>
+<div class="codehilite"><pre><span></span>    cd &lt;BASE&gt; où BASE est le répertoire contenant votre projet
+    cd src/addons/com/bluedolmen/training/mymodule/META-INF
+    ant package
+</pre></div>
+
+
+<p>Vous obtenez alors le résultat suivant :</p>
+<h4 id="publication-sur-blueappstore">Publication sur BlueAppStore<a class="headerlink" href="#publication-sur-blueappstore" title="Permanent link">&para;</a></h4>
+<p>Pour publier le module, il faut d'abord renseigner les login et mot de passe pour se connecter sur BlueAppStore. Ces informations doivent être stockés dans votre répertoire utilisateur dans un fichier .build-bdas.properties avec le contenu suivant :</p>
+<ul>
+<li>.build-bdas.properties<div class="codehilite"><pre><span></span># Dans notre exemple, la variable base correspond au répertoire racine de votre projet:
+#
+base=&lt;chemin absolu du répertoire de votre projet&gt;
+bdas.user=&lt;votre nom d&#39;utilisateur&gt;
+bdas.passwd=&lt;votre mot de passe&gt;
+</pre></div>
+
+
+</li>
+</ul>
+<p>Pour publier le module, il suffit de lancer la target 'publish' :</p>
+<div class="codehilite"><pre><span></span>    cd &lt;BASE&gt; où BASE est le répertoire contenant votre projet
+    cd src/addons/com/bluedolmen/training/mymodule/META-INF
+    ant publish
+</pre></div>
+
+
+<p>Vous obtenez alors le résultat suivant :</p>
+<h4 id="generation-et-publication-simultanees">Génération et publication simultanées<a class="headerlink" href="#generation-et-publication-simultanees" title="Permanent link">&para;</a></h4>
+<p>Une fois rodées, les 2 commandes précédentes peuvent être appelées directement :</p>
+<div class="codehilite"><pre><span></span>    cd &lt;BASE&gt; où BASE est le répertoire contenant votre projet
+    cd src/addons/com/bluedolmen/training/mymodule/META-INF
+    ant packageAndPublish
+</pre></div>
+
+
+<h3 id="interface-web-blueappstore">Interface web BlueAppStore<a class="headerlink" href="#interface-web-blueappstore" title="Permanent link">&para;</a></h3>
+<p>BlueAppStore propose une application de création de modules. Elle peut aussi être utilisée pour packager des fichiers déjà existants sur votre ordinateur.</p>
+<h2 id="exemple">Exemple<a class="headerlink" href="#exemple" title="Permanent link">&para;</a></h2>
+<p>Afin d'illustrer</p>
+<p>Les éléments ont été définis précédemment dans le tutoriel de personnalisation de BlueCourrier. Vous avez donc en votre possession les éléments suivants :
+* Modèle de données : <a href=""></a>
+* Formulaire : 
+    - <a href=""></a></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../MU/" title="Manuel utilisateur" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Manuel utilisateur
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../BP/MG-Processus/" title="Guide d'utilisation de BlueProcessus" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Guide d'utilisation de BlueProcessus
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 BlueDolmen
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="http://struct.cc" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/bluedolmen" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/bluedolmen" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/bluedolmen" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.b438e6c5.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"../../.."}})</script>
+      
+        <script src="../../../assets/javascripts/ginseng.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>
